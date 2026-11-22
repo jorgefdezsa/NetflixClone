@@ -57,6 +57,24 @@ El título destacado y el reproductor usan un único clip: `public/assets/video/
 
 Todo se guarda en `localStorage`: `nbc:profile` (perfil activo), `nbc:my-list:<perfil>` (Mi lista) y `nbc:volume` (volumen del reproductor).
 
+## Desarrollo con Spec Kit
+
+El proyecto se planificó con [Spec Kit](https://github.com/github/spec-kit) (versión `1.2.2.dev0`, integración `copilot`), siguiendo el flujo constitución → especificación → plan → tareas. Los comandos están instalados como *skills* en `.github/skills/` y se invocan como `/speckit-<nombre>`.
+
+| Comando | Qué produjo |
+|---|---|
+| `/speckit-constitution` | `.specify/memory/constitution.md` (v1.1.0, principios I–VIII) |
+| `/speckit-specify` | `specs/001-netflix-browse/spec.md` y `checklists/requirements.md` |
+| `/speckit-clarify` | Sección «Clarifications» de la spec (4 preguntas y respuestas) |
+| `/speckit-plan` | `plan.md`, `research.md`, `data-model.md`, `contracts/` y `quickstart.md` |
+| `/speckit-tasks` | `tasks.md` (índice con casillas) y las fichas `phases/P01…P14` |
+
+La implementación **no** se hizo con `/speckit-implement`: se siguió a mano `specs/001-netflix-browse/IMPLEMENT.md` y la ficha de cada fase, con un commit por fase. No se han usado `/speckit-analyze`, `/speckit-checklist`, `/speckit-converge` ni `/speckit-taskstoissues`, y Spec Kit no ha hecho ninguna llamada a GitHub.
+
+Los prompts exactos no se conservan, así que la cronología completa (con la evidencia de cada paso y lo que es inferido) está reconstruida en [`specs/001-netflix-browse/README.md`](specs/001-netflix-browse/README.md).
+
 ## Documentación
 
-Reglas del proyecto en `.specify/memory/constitution.md`; especificación, plan, contratos y tareas en `specs/001-netflix-browse/`. El historial de comandos de Spec Kit usados está en `specs/001-netflix-browse/README.md`. Las desviaciones respecto a las fichas están en `specs/001-netflix-browse/NOTES.md`.
+**Usar Spec Kit con Copilot CLI o Claude Code, con modelos locales (oMLX) o en la nube:** [`docs/INTEGRACION-AGENTES.md`](docs/INTEGRACION-AGENTES.md).
+
+Reglas del proyecto en `.specify/memory/constitution.md`; especificación, plan, contratos y tareas en `specs/001-netflix-browse/`. Las desviaciones respecto a las fichas están en `specs/001-netflix-browse/NOTES.md`.
