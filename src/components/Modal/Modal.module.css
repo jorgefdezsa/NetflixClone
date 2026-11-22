@@ -1,0 +1,18 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: var(--z-modal);
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.dialog {
+  width: min(850px, 100%);
+  margin: var(--space-5) 0;
+  background: var(--color-surface);
+  border-radius: 8px;
+  outline: none;
+  align-self: flex-start;
+}

@@ -18,3 +18,7 @@
 ## P08
 - **T078 — foco dentro de la tarjeta**: la ficha pasa `handlers.onBlur` tal cual al `<li>`, pero `blur` burbujea: al tabular del botón de la tarjeta a `preview-play` se cerraba la previsualización y los botones eran inalcanzables con teclado. `TitleCard` envuelve `onBlur` y solo cierra si el foco sale de la tarjeta (`relatedTarget` fuera del `<li>`). `useHoverPreview` no cambia. Cubierto por una prueba extra en `TitleCard.test.tsx`.
 - **T077**: "1 temporada" en singular cuando una serie tiene una sola; el catálogo actual siempre tiene 2.
+
+## P09
+- **T087**: `TitleModalHost` pasa `key={current.id}` a `TitleModal`. Así, al abrir un título similar desde el propio modal, el selector de temporada vuelve a la temporada 1 y el foco se restaura al elemento original. No altera el contrato.
+- **T081**: además de lo pedido, `Shift+Tab` con el foco en el propio diálogo (que se enfoca al abrir, `tabIndex=-1`) también salta al último enfocable; sin esto el foco escapaba del modal.

@@ -153,16 +153,16 @@ Ficha: `phases/P08-us4-preview.md`
 
 Ficha: `phases/P09-us5-detail.md`
 
-- [ ] T081 [P] [US5] `useFocusTrap`
-- [ ] T082 [P] [US5] `Modal.module.css`
-- [ ] T083 [US5] `Modal.tsx`
-- [ ] T084 [US5] `Modal.test.tsx`
-- [ ] T085 [P] [US5] `TitleModal.module.css`
-- [ ] T086 [US5] `TitleModal.tsx`
-- [ ] T087 [P] [US5] `TitleModalHost`
-- [ ] T088 [US5] `RootLayout` con host del modal
-- [ ] T089 [US5] `TitleModal.test.tsx`
-- [ ] T090 [US5] GATE US5
+- [X] T081 [P] [US5] `useFocusTrap`
+- [X] T082 [P] [US5] `Modal.module.css`
+- [X] T083 [US5] `Modal.tsx`
+- [X] T084 [US5] `Modal.test.tsx`
+- [X] T085 [P] [US5] `TitleModal.module.css`
+- [X] T086 [US5] `TitleModal.tsx`
+- [X] T087 [P] [US5] `TitleModalHost`
+- [X] T088 [US5] `RootLayout` con host del modal
+- [X] T089 [US5] `TitleModal.test.tsx`
+- [X] T090 [US5] GATE US5
 
 ## P10 · US6 Mi lista (P2)
 
