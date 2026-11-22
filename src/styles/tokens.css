@@ -1,0 +1,27 @@
+:root {
+  --color-bg: #141414;
+  --color-surface: #1f1f1f;
+  --color-text: #ffffff;
+  --color-text-muted: #b3b3b3;
+  --color-accent: #e50914;
+  --color-focus: #ffffff;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --font-family: system-ui, sans-serif;
+
+  --z-header: 100;
+  --z-preview: 50;
+  --z-modal: 200;
+
+  --preview-space-top: 24px;
+  --preview-space-bottom: 160px;
+  --preview-space-inline: 32px;
+
+  --header-height: 68px;
+}

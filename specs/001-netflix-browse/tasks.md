@@ -48,16 +48,16 @@ Ficha: `phases/P01-setup.md`
 
 Ficha: `phases/P02-styles-lib.md`
 
-- [ ] T011 `src/styles/tokens.css`
-- [ ] T012 `src/styles/global.css`
-- [ ] T013 [P] `storage`
-- [ ] T014 [P] `filterByProfile`
-- [ ] T015 [P] `searchTitles`
-- [ ] T016 [P] `rowsForView`
-- [ ] T017 [P] `itemsPerPage`
-- [ ] T018 [P] `formatDuration`
-- [ ] T019 [P] `similarTitles`
-- [ ] T020 GATE P02
+- [X] T011 `src/styles/tokens.css`
+- [X] T012 `src/styles/global.css`
+- [X] T013 [P] `storage`
+- [X] T014 [P] `filterByProfile`
+- [X] T015 [P] `searchTitles`
+- [X] T016 [P] `rowsForView`
+- [X] T017 [P] `itemsPerPage`
+- [X] T018 [P] `formatDuration`
+- [X] T019 [P] `similarTitles`
+- [X] T020 GATE P02
 
 ## P03 · Datos del catálogo
 
