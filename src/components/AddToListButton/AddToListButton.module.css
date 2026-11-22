@@ -1,0 +1,20 @@
+.button {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-text-muted);
+  border-radius: 50%;
+  background: rgb(42 42 42 / 60%);
+  color: var(--color-text);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.button:hover {
+  border-color: var(--color-text);
+}
+
+.button[aria-pressed='true'] {
+  border-color: var(--color-text);
+}

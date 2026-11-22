@@ -82,21 +82,21 @@ Ficha: `phases/P03-data.md`
 
 Ficha: `phases/P04-state-app.md`
 
-- [ ] T035 `useProfile`
-- [ ] T036 Prueba de `useProfile`
-- [ ] T037 `useMyList`
-- [ ] T038 Prueba de `useMyList`
-- [ ] T039 `useTitleModal`
-- [ ] T040 `SafeImage`
-- [ ] T041 Prueba de `SafeImage`
-- [ ] T042 `AddToListButton`
-- [ ] T043 Prueba de `AddToListButton`
-- [ ] T044 `RootLayout`
-- [ ] T045 `routes.tsx`
-- [ ] T046 `App`
-- [ ] T047 `main.tsx`
-- [ ] T048 `renderWithProviders`
-- [ ] T049 GATE P04
+- [X] T035 `useProfile`
+- [X] T036 Prueba de `useProfile`
+- [X] T037 `useMyList`
+- [X] T038 Prueba de `useMyList`
+- [X] T039 `useTitleModal`
+- [X] T040 `SafeImage`
+- [X] T041 Prueba de `SafeImage`
+- [X] T042 `AddToListButton`
+- [X] T043 Prueba de `AddToListButton`
+- [X] T044 `RootLayout`
+- [X] T045 `routes.tsx`
+- [X] T046 `App`
+- [X] T047 `main.tsx`
+- [X] T048 `renderWithProviders`
+- [X] T049 GATE P04
 
 ## P05 · US1 Cabecera de navegación (P1) 🎯 MVP
 
