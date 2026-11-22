@@ -59,4 +59,4 @@ Todo se guarda en `localStorage`: `nbc:profile` (perfil activo), `nbc:my-list:<p
 
 ## Documentación
 
-Reglas del proyecto en `.specify/memory/constitution.md`; especificación, plan, contratos y tareas en `specs/001-netflix-browse/`. Las desviaciones respecto a las fichas están en `specs/001-netflix-browse/NOTES.md`.
+Reglas del proyecto en `.specify/memory/constitution.md`; especificación, plan, contratos y tareas en `specs/001-netflix-browse/`. El historial de comandos de Spec Kit usados está en `specs/001-netflix-browse/README.md`. Las desviaciones respecto a las fichas están en `specs/001-netflix-browse/NOTES.md`.
