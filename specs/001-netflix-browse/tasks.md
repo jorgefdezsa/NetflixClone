@@ -192,14 +192,14 @@ Ficha: `phases/P11-us7-search.md`
 
 Ficha: `phases/P12-us8-profiles.md`
 
-- [ ] T105 [P] [US8] `ProfileGate`
-- [ ] T106 [P] [US8] `ProfilesPage`
-- [ ] T107 [P] [US8] `RequireProfile`
-- [ ] T108 [P] [US8] `HomeRedirect`
-- [ ] T109 [US8] Rutas con protección
-- [ ] T110 [US8] `ProfileGate.test.tsx`
-- [ ] T111 [US8] `BrowsePage.kids.test.tsx`
-- [ ] T112 [US8] GATE US8
+- [X] T105 [P] [US8] `ProfileGate`
+- [X] T106 [P] [US8] `ProfilesPage`
+- [X] T107 [P] [US8] `RequireProfile`
+- [X] T108 [P] [US8] `HomeRedirect`
+- [X] T109 [US8] Rutas con protección
+- [X] T110 [US8] `ProfileGate.test.tsx`
+- [X] T111 [US8] `BrowsePage.kids.test.tsx`
+- [X] T112 [US8] GATE US8
 
 ## P13 · US9 Reproductor simulado (P3)
 

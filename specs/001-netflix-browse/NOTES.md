@@ -28,3 +28,8 @@
 - **T098**: no se vuelve a navegar si `debounced` ya coincide con la `q` de la URL en `/search` (evita una navegación redundante al montar).
 - **T102 — pruebas con temporizadores**: `userEvent` con `vi.useFakeTimers()` se cuelga en Vitest (la espera interna de Testing Library solo detecta temporizadores falsos de Jest). `SearchBox.test.tsx` usa `fireEvent` + `act(() => vi.advanceTimersByTime(...))` en lugar de `userEvent.setup({ advanceTimers })`. Cubre los mismos casos.
 - **Lint**: `npm run lint` da 0 errores y 3 avisos `react-refresh/only-export-components` (proveedor y hook en el mismo fichero, como pide P04). No bloquean.
+
+## P12
+- **T105**: el perfil Infantil se llama "Infantil", así que mostrar además la etiqueta "Infantil" duplicaba el texto. La tarjeta muestra el nombre y, si `isKids`, la etiqueta "Perfil infantil".
+- **T110 — pruebas de rutas**: `createMemoryRouter` + `RouterProvider` falla en Vitest/jsdom (`RequestInit: Expected signal ("AbortSignal {}") to be an instance of AbortSignal`: el router con datos crea un `Request` con el `AbortSignal` de jsdom, que `fetch` de Node no acepta). Las pruebas usan `MemoryRouter` + `useRoutes(routes)` con un `<span data-testid="location">`, que es la alternativa que la propia ficha permite. En el navegador, `App` sigue usando `createBrowserRouter`, que no tiene este problema.
+- **T109**: la ruta `*` redirige a `/` (que decide entre `/browse` y `/profiles`), como pide esta ficha, en lugar de a `/browse` (P05). `/watch/:id` se añadirá dentro del grupo protegido en P13.

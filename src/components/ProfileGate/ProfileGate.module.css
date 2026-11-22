@@ -1,0 +1,54 @@
+.gate {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-4);
+}
+
+.title {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 500;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  width: 128px;
+  background: none;
+  border: 0;
+  color: var(--color-text-muted);
+}
+
+.card img {
+  display: block;
+  border-radius: 6px;
+  border: 3px solid transparent;
+}
+
+.card:hover,
+.card:focus-visible {
+  color: var(--color-text);
+}
+
+.card:hover img {
+  border-color: var(--color-text);
+}
+
+.kids {
+  font-size: 0.75rem;
+  border: 1px solid var(--color-text-muted);
+  padding: 0 var(--space-2);
+}
