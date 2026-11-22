@@ -75,4 +75,6 @@ Los prompts exactos no se conservan, así que la cronología completa (con la ev
 
 ## Documentación
 
+**Usar Spec Kit con Copilot CLI o Claude Code, con modelos locales (oMLX) o en la nube:** [`docs/INTEGRACION-AGENTES.md`](docs/INTEGRACION-AGENTES.md).
+
 Reglas del proyecto en `.specify/memory/constitution.md`; especificación, plan, contratos y tareas en `specs/001-netflix-browse/`. Las desviaciones respecto a las fichas están en `specs/001-netflix-browse/NOTES.md`.
