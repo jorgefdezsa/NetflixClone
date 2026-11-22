@@ -39,3 +39,9 @@
 - **T115**: el estado "reproduciendo" sigue los eventos `play`/`pause`/`ended` del `<video>` (no se asume nada al montar), y `player-fullscreen` también sale de pantalla completa si ya está en ella. En jsdom no hay reproducción real, así que `Player.test.tsx` simula `play`, `pause` y `paused`.
 - **T117**: `/watch/:id` usa `lazy` (solo funciona con el router de datos de `App`; `useRoutes` en pruebas lo ignora). Vite lo separa en su propio chunk (`WatchPage-*.js`).
 - **Sin vídeo**: sin `public/assets/video/sample.mp4` (T065, manual) el reproductor se ve negro, pero los controles funcionan.
+
+## P14
+- **jsdom y Node ≥ 20**: la ficha P01 instala `jsdom` sin versión, que hoy resuelve a la 31, la cual exige Node ≥ 22.22 y contradice el "Node ≥ 20" del README. Se fija `jsdom@25` (`>=18`); las 145 pruebas pasan igual.
+- **T121**: `npm run lint` da 0 errores y 3 avisos `react-refresh/only-export-components` (`useProfile`, `useMyList`, `useTitleModal` exportan proveedor y hook en el mismo fichero, tal como piden las fichas de P04). No se tocan para no cambiar el diseño.
+- **T122 / T123**: sin `<img>` fuera de `SafeImage` y sin `any` en `src`.
+- **Pendiente (manual, personas)**: T065 (vídeo de muestra) y T124–T128 (contraste, teclado, responsive, movimiento reducido y recorrido por historias del `quickstart.md`). Ninguna se ha podido verificar en un navegador desde aquí.

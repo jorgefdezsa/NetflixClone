@@ -217,16 +217,16 @@ Ficha: `phases/P13-us9-player.md`
 
 Ficha: `phases/P14-polish.md`
 
-- [ ] T120 [P] README
-- [ ] T121 Lint
-- [ ] T122 [P] Imágenes solo con `SafeImage`
-- [ ] T123 [P] Sin `any`
+- [X] T120 [P] README
+- [X] T121 Lint
+- [X] T122 [P] Imágenes solo con `SafeImage`
+- [X] T123 [P] Sin `any`
 - [ ] T124 [MANUAL] Contraste
 - [ ] T125 [MANUAL] Teclado
 - [ ] T126 [MANUAL] Responsive
 - [ ] T127 [MANUAL] Movimiento reducido
 - [ ] T128 [MANUAL] Recorrido por historias
-- [ ] T129 GATE FINAL
+- [X] T129 GATE FINAL
 
 ## Dependencias
 
