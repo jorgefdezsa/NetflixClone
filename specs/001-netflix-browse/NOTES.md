@@ -33,3 +33,9 @@
 - **T105**: el perfil Infantil se llama "Infantil", así que mostrar además la etiqueta "Infantil" duplicaba el texto. La tarjeta muestra el nombre y, si `isKids`, la etiqueta "Perfil infantil".
 - **T110 — pruebas de rutas**: `createMemoryRouter` + `RouterProvider` falla en Vitest/jsdom (`RequestInit: Expected signal ("AbortSignal {}") to be an instance of AbortSignal`: el router con datos crea un `Request` con el `AbortSignal` de jsdom, que `fetch` de Node no acepta). Las pruebas usan `MemoryRouter` + `useRoutes(routes)` con un `<span data-testid="location">`, que es la alternativa que la propia ficha permite. En el navegador, `App` sigue usando `createBrowserRouter`, que no tiene este problema.
 - **T109**: la ruta `*` redirige a `/` (que decide entre `/browse` y `/profiles`), como pide esta ficha, en lugar de a `/browse` (P05). `/watch/:id` se añadirá dentro del grupo protegido en P13.
+
+## P13
+- **T113**: `Espacio` con el foco sobre un `<button>` no se intercepta (lo activa el propio botón). La ficha solo exige ignorar `input`/`select`/`textarea`, pero con el botón de reproducir enfocado tras un clic, el atajo y el clic nativo alternaban dos veces y se anulaban. Hay prueba.
+- **T115**: el estado "reproduciendo" sigue los eventos `play`/`pause`/`ended` del `<video>` (no se asume nada al montar), y `player-fullscreen` también sale de pantalla completa si ya está en ella. En jsdom no hay reproducción real, así que `Player.test.tsx` simula `play`, `pause` y `paused`.
+- **T117**: `/watch/:id` usa `lazy` (solo funciona con el router de datos de `App`; `useRoutes` en pruebas lo ignora). Vite lo separa en su propio chunk (`WatchPage-*.js`).
+- **Sin vídeo**: sin `public/assets/video/sample.mp4` (T065, manual) el reproductor se ve negro, pero los controles funcionan.

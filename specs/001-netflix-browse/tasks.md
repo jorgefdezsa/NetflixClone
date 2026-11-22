@@ -205,13 +205,13 @@ Ficha: `phases/P12-us8-profiles.md`
 
 Ficha: `phases/P13-us9-player.md`
 
-- [ ] T113 [P] [US9] `usePlayerShortcuts`
-- [ ] T114 [P] [US9] `Player.module.css`
-- [ ] T115 [US9] `Player.tsx`
-- [ ] T116 [P] [US9] `WatchPage`
-- [ ] T117 [US9] Ruta `/watch/:id`
-- [ ] T118 [US9] `Player.test.tsx`
-- [ ] T119 [US9] GATE US9
+- [X] T113 [P] [US9] `usePlayerShortcuts`
+- [X] T114 [P] [US9] `Player.module.css`
+- [X] T115 [US9] `Player.tsx`
+- [X] T116 [P] [US9] `WatchPage`
+- [X] T117 [US9] Ruta `/watch/:id`
+- [X] T118 [US9] `Player.test.tsx`
+- [X] T119 [US9] GATE US9
 
 ## P14 · Pulido y comprobaciones finales
 

@@ -22,6 +22,10 @@ export const routes: RouteObject[] = [
           { path: '/browse/new', element: <BrowsePage view="new" /> },
           { path: '/my-list', element: <MyListPage /> },
           { path: '/search', element: <SearchPage /> },
+          {
+            path: '/watch/:id',
+            lazy: () => import('../pages/WatchPage').then((m) => ({ Component: m.default })),
+          },
         ],
       },
       { path: '*', element: <Navigate to="/" replace /> },
