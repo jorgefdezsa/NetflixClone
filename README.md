@@ -4,6 +4,14 @@ Demo de navegación al estilo Netflix hecha con React 18, TypeScript y Vite. Es 
 
 Qué incluye: cabecera con notificaciones y menú de perfil, título destacado, filas con carrusel y Top 10, tarjeta con previsualización, detalle de título (con temporadas y similares), Mi lista, búsqueda, selección de perfil (con perfil Infantil) y un reproductor simulado con atajos de teclado.
 
+## Capturas
+
+| Inicio | Detalle de un título |
+|---|---|
+| ![Página de inicio: cabecera, título destacado «Cruce de Fuego» y las filas Tendencias, Top 10 en España, Porque has visto… y Series de TV](docs/screenshots/inicio.webp) | ![Ventana de detalle de «La Última Carta» sobre la página de inicio, con año, edad, duración, géneros, reparto y títulos similares](docs/screenshots/detalle-titulo.webp) |
+
+Los pósteres y banners son imágenes provisionales generadas con `npm run assets`.
+
 ## Requisitos
 
 - Node.js ≥ 20 y npm.
