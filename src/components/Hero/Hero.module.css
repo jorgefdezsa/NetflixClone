@@ -1,0 +1,70 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: min(80vh, 720px);
+  overflow: hidden;
+}
+
+.media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 60%),
+    linear-gradient(to top, var(--color-bg), transparent 30%);
+}
+
+.content {
+  position: relative;
+  max-width: 560px;
+  padding: 0 var(--space-4);
+  margin-top: 28vh;
+}
+
+.content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: var(--space-3) 0;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid var(--color-text-muted);
+  padding: 0 var(--space-2);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.play,
+.more {
+  border: 0;
+  border-radius: 4px;
+  padding: var(--space-2) var(--space-4);
+  font-weight: 700;
+}
+
+.play {
+  background: #fff;
+  color: #000;
+}
+
+.more {
+  background: rgba(109, 109, 110, 0.7);
+  color: #fff;
+}

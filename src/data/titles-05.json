@@ -1,0 +1,664 @@
+[
+  {
+    "id": "t-041",
+    "type": "series",
+    "name": "Los Monstruitos",
+    "synopsis": "Una familia de monstruos intenta pasar desapercibida en un barrio normal.",
+    "year": 2022,
+    "rating": "TP",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Vecinos nuevos",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 40
+          },
+          {
+            "number": 2,
+            "name": "Halloween",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 47
+          },
+          {
+            "number": 3,
+            "name": "El colegio",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 54
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Excursión",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 45
+          },
+          {
+            "number": 2,
+            "name": "El cumple",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 52
+          },
+          {
+            "number": 3,
+            "name": "Disfraces",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 43
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Animación",
+      "Comedia"
+    ],
+    "cast": [
+      "Nora Gil",
+      "Pablo Rey"
+    ],
+    "poster": "/assets/posters/t-041.svg",
+    "banner": "/assets/banners/t-041.svg",
+    "addedAt": "2026-06-08"
+  },
+  {
+    "id": "t-042",
+    "type": "series",
+    "name": "Oficina de Locos",
+    "synopsis": "El día a día de la oficina más disfuncional de Albacete.",
+    "year": 2021,
+    "rating": "7+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Lunes",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 43
+          },
+          {
+            "number": 2,
+            "name": "La impresora",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 50
+          },
+          {
+            "number": 3,
+            "name": "Cena de empresa",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 41
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Auditoría",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 48
+          },
+          {
+            "number": 2,
+            "name": "Mudanza",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 55
+          },
+          {
+            "number": 3,
+            "name": "Viernes",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 46
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Luis Gómez",
+      "Celia Mora"
+    ],
+    "poster": "/assets/posters/t-042.svg",
+    "banner": "/assets/banners/t-042.svg",
+    "addedAt": "2026-07-15"
+  },
+  {
+    "id": "t-043",
+    "type": "series",
+    "name": "Planeta Burbuja",
+    "synopsis": "Unos alienígenas diminutos exploran el acuario de una casa.",
+    "year": 2020,
+    "rating": "TP",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Aterrizaje",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 46
+          },
+          {
+            "number": 2,
+            "name": "El pez",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 53
+          },
+          {
+            "number": 3,
+            "name": "Burbujas",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 44
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La tormenta",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 51
+          },
+          {
+            "number": 2,
+            "name": "Algas",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 42
+          },
+          {
+            "number": 3,
+            "name": "Despegue",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 49
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Animación"
+    ],
+    "cast": [
+      "Gael Ruiz",
+      "Lola Peña"
+    ],
+    "poster": "/assets/posters/t-043.svg",
+    "banner": "/assets/banners/t-043.svg",
+    "addedAt": "2026-08-22"
+  },
+  {
+    "id": "t-044",
+    "type": "series",
+    "name": "Mi Familia y Yo",
+    "synopsis": "Un adolescente narra el caos cotidiano de una familia numerosa.",
+    "year": 2019,
+    "rating": "7+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "El baño",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 49
+          },
+          {
+            "number": 2,
+            "name": "Navidad",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 40
+          },
+          {
+            "number": 3,
+            "name": "La mascota",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 47
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Notas",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 54
+          },
+          {
+            "number": 2,
+            "name": "Viaje",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 45
+          },
+          {
+            "number": 3,
+            "name": "Verano",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 52
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Hugo Lara",
+      "Rosa Aranda"
+    ],
+    "poster": "/assets/posters/t-044.svg",
+    "banner": "/assets/banners/t-044.svg",
+    "addedAt": "2026-09-01"
+  },
+  {
+    "id": "t-045",
+    "type": "series",
+    "name": "Kiko y la Nave",
+    "synopsis": "Un niño construye una nave con cajas y viaja cada noche a un planeta distinto.",
+    "year": 2023,
+    "rating": "TP",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Despegue",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 52
+          },
+          {
+            "number": 2,
+            "name": "Planeta dulce",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 43
+          },
+          {
+            "number": 3,
+            "name": "Lunas",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 50
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "El cometa",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 41
+          },
+          {
+            "number": 2,
+            "name": "Asteroides",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 48
+          },
+          {
+            "number": 3,
+            "name": "Vuelta a casa",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 55
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Animación"
+    ],
+    "cast": [
+      "Leo Navarro",
+      "Inés Campos"
+    ],
+    "poster": "/assets/posters/t-045.svg",
+    "banner": "/assets/banners/t-045.svg",
+    "addedAt": "2026-01-08"
+  },
+  {
+    "id": "t-046",
+    "type": "series",
+    "name": "Bar Manolo",
+    "synopsis": "Clientes fijos y camareros resuelven los problemas del barrio desde la barra.",
+    "year": 2018,
+    "rating": "7+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Tapas",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 55
+          },
+          {
+            "number": 2,
+            "name": "El partido",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 46
+          },
+          {
+            "number": 3,
+            "name": "Inspección",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 53
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La tragaperras",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 44
+          },
+          {
+            "number": 2,
+            "name": "Aniversario",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 51
+          },
+          {
+            "number": 3,
+            "name": "Cierre",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 42
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Fernando Lillo",
+      "Carmen Vidal"
+    ],
+    "poster": "/assets/posters/t-046.svg",
+    "banner": "/assets/banners/t-046.svg",
+    "addedAt": "2026-11-03"
+  },
+  {
+    "id": "t-047",
+    "type": "series",
+    "name": "Granja Feliz",
+    "synopsis": "Los animales de una granja organizan aventuras cuando el granjero duerme.",
+    "year": 2026,
+    "rating": "TP",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Gallo rebelde",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 42
+          },
+          {
+            "number": 2,
+            "name": "La feria",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 49
+          },
+          {
+            "number": 3,
+            "name": "Lluvia",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 40
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "El espantapájaros",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 47
+          },
+          {
+            "number": 2,
+            "name": "Cosecha",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 54
+          },
+          {
+            "number": 3,
+            "name": "Fiesta",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 45
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Animación",
+      "Comedia"
+    ],
+    "cast": [
+      "Sara Molina",
+      "Óscar Belda"
+    ],
+    "poster": "/assets/posters/t-047.svg",
+    "banner": "/assets/banners/t-047.svg",
+    "addedAt": "2026-10-10"
+  },
+  {
+    "id": "t-048",
+    "type": "series",
+    "name": "Compis de Piso",
+    "synopsis": "Cuatro desconocidos comparten un piso diminuto en Lavapiés.",
+    "year": 2026,
+    "rating": "7+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La entrevista",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 45
+          },
+          {
+            "number": 2,
+            "name": "Turnos",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 52
+          },
+          {
+            "number": 3,
+            "name": "El casero",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 43
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Fiesta",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 50
+          },
+          {
+            "number": 2,
+            "name": "Okupas",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 41
+          },
+          {
+            "number": 3,
+            "name": "Contrato",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 48
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Álex Prieto",
+      "Julia Serra"
+    ],
+    "poster": "/assets/posters/t-048.svg",
+    "banner": "/assets/banners/t-048.svg",
+    "addedAt": "2026-11-17"
+  },
+  {
+    "id": "t-049",
+    "type": "series",
+    "name": "Detectives Minúsculos",
+    "synopsis": "Dos hormigas resuelven misterios en el jardín.",
+    "year": 2025,
+    "rating": "TP",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Caso uno",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 48
+          },
+          {
+            "number": 2,
+            "name": "La miga",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 55
+          },
+          {
+            "number": 3,
+            "name": "El caracol",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 46
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Huellas",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 53
+          },
+          {
+            "number": 2,
+            "name": "Lluvia",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 44
+          },
+          {
+            "number": 3,
+            "name": "Caso cerrado",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 51
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Animación"
+    ],
+    "cast": [
+      "Marina Soler",
+      "Gael Ruiz"
+    ],
+    "poster": "/assets/posters/t-049.svg",
+    "banner": "/assets/banners/t-049.svg",
+    "addedAt": "2026-10-04"
+  },
+  {
+    "id": "t-050",
+    "type": "series",
+    "name": "Abuelos al Poder",
+    "synopsis": "Unos jubilados montan una start-up desde la residencia.",
+    "year": 2026,
+    "rating": "7+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La idea",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 51
+          },
+          {
+            "number": 2,
+            "name": "Inversores",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 42
+          },
+          {
+            "number": 3,
+            "name": "La app",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 49
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Viral",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 40
+          },
+          {
+            "number": 2,
+            "name": "Competencia",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 47
+          },
+          {
+            "number": 3,
+            "name": "Salida a bolsa",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 54
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Antonio Seco",
+      "Rosa Aranda"
+    ],
+    "poster": "/assets/posters/t-050.svg",
+    "banner": "/assets/banners/t-050.svg",
+    "addedAt": "2026-11-11"
+  }
+]

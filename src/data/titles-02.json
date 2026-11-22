@@ -1,0 +1,198 @@
+[
+  {
+    "id": "t-011",
+    "type": "movie",
+    "name": "Mi Vecino el Dragón",
+    "synopsis": "Un niño descubre que el señor del quinto es un dragón jubilado.",
+    "year": 2023,
+    "rating": "TP",
+    "durationMinutes": 88,
+    "genres": [
+      "Animación",
+      "Familia"
+    ],
+    "cast": [
+      "Sara Molina",
+      "Pablo Rey"
+    ],
+    "poster": "/assets/posters/t-011.svg",
+    "banner": "/assets/banners/t-011.svg",
+    "addedAt": "2026-03-22"
+  },
+  {
+    "id": "t-012",
+    "type": "movie",
+    "name": "Vacaciones en Caos",
+    "synopsis": "Una familia alquila una casa rural que resulta ser una granja de alpacas.",
+    "year": 2024,
+    "rating": "7+",
+    "durationMinutes": 94,
+    "genres": [
+      "Comedia",
+      "Familia"
+    ],
+    "cast": [
+      "Luis Gómez",
+      "Carmen Vidal"
+    ],
+    "poster": "/assets/posters/t-012.svg",
+    "banner": "/assets/banners/t-012.svg",
+    "addedAt": "2026-04-01"
+  },
+  {
+    "id": "t-013",
+    "type": "movie",
+    "name": "El Robot que Quería Bailar",
+    "synopsis": "Un robot de limpieza sueña con ganar un concurso de baile.",
+    "year": 2022,
+    "rating": "TP",
+    "durationMinutes": 85,
+    "genres": [
+      "Animación"
+    ],
+    "cast": [
+      "Nora Gil",
+      "Álex Prieto"
+    ],
+    "poster": "/assets/posters/t-013.svg",
+    "banner": "/assets/banners/t-013.svg",
+    "addedAt": "2026-05-08"
+  },
+  {
+    "id": "t-014",
+    "type": "movie",
+    "name": "La Abuela Espía",
+    "synopsis": "Una abuela entrañable resulta ser una agente secreta en activo.",
+    "year": 2021,
+    "rating": "7+",
+    "durationMinutes": 99,
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Rosa Aranda",
+      "Daniel Ferrer"
+    ],
+    "poster": "/assets/posters/t-014.svg",
+    "banner": "/assets/banners/t-014.svg",
+    "addedAt": "2026-06-15"
+  },
+  {
+    "id": "t-015",
+    "type": "movie",
+    "name": "Bajo la Cama",
+    "synopsis": "Dos hermanos se hacen amigos del monstruo que vive bajo su cama.",
+    "year": 2020,
+    "rating": "TP",
+    "durationMinutes": 82,
+    "genres": [
+      "Animación",
+      "Familia"
+    ],
+    "cast": [
+      "Leo Navarro",
+      "Inés Campos"
+    ],
+    "poster": "/assets/posters/t-015.svg",
+    "banner": "/assets/banners/t-015.svg",
+    "addedAt": "2026-07-22"
+  },
+  {
+    "id": "t-016",
+    "type": "movie",
+    "name": "Cocinillas",
+    "synopsis": "Un chef desastroso entra en un concurso de cocina infantil por error.",
+    "year": 2019,
+    "rating": "7+",
+    "durationMinutes": 92,
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Fernando Lillo",
+      "Julia Serra"
+    ],
+    "poster": "/assets/posters/t-016.svg",
+    "banner": "/assets/banners/t-016.svg",
+    "addedAt": "2026-08-01"
+  },
+  {
+    "id": "t-017",
+    "type": "movie",
+    "name": "Pingüinos en Madrid",
+    "synopsis": "Tres pingüinos se escapan del zoo y descubren la ciudad.",
+    "year": 2024,
+    "rating": "TP",
+    "durationMinutes": 86,
+    "genres": [
+      "Animación",
+      "Comedia"
+    ],
+    "cast": [
+      "Marina Soler",
+      "Óscar Belda"
+    ],
+    "poster": "/assets/posters/t-017.svg",
+    "banner": "/assets/banners/t-017.svg",
+    "addedAt": "2026-09-08"
+  },
+  {
+    "id": "t-018",
+    "type": "movie",
+    "name": "El Gran Viaje de Tula",
+    "synopsis": "Una tortuga recorre el océano para volver a la playa donde nació.",
+    "year": 2018,
+    "rating": "TP",
+    "durationMinutes": 90,
+    "genres": [
+      "Animación",
+      "Familia"
+    ],
+    "cast": [
+      "Lola Peña",
+      "Gael Ruiz"
+    ],
+    "poster": "/assets/posters/t-018.svg",
+    "banner": "/assets/banners/t-018.svg",
+    "addedAt": "2026-01-15"
+  },
+  {
+    "id": "t-019",
+    "type": "movie",
+    "name": "Campamento Desastre",
+    "synopsis": "Un monitor novato debe sobrevivir a un verano con los niños más traviesos.",
+    "year": 2023,
+    "rating": "7+",
+    "durationMinutes": 97,
+    "genres": [
+      "Comedia",
+      "Familia"
+    ],
+    "cast": [
+      "Rubén Ortiz",
+      "Ana Pérez"
+    ],
+    "poster": "/assets/posters/t-019.svg",
+    "banner": "/assets/banners/t-019.svg",
+    "addedAt": "2026-02-22"
+  },
+  {
+    "id": "t-020",
+    "type": "movie",
+    "name": "Superhéroes de Barrio",
+    "synopsis": "Unos niños sin poderes forman la liga de héroes más torpe del barrio.",
+    "year": 2025,
+    "rating": "7+",
+    "durationMinutes": 95,
+    "genres": [
+      "Comedia"
+    ],
+    "cast": [
+      "Hugo Lara",
+      "Celia Mora"
+    ],
+    "poster": "/assets/posters/t-020.svg",
+    "banner": "/assets/banners/t-020.svg",
+    "addedAt": "2026-03-01"
+  }
+]

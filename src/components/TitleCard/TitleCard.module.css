@@ -1,0 +1,43 @@
+.card {
+  flex: 0 0 calc(100% / var(--per-page, 6));
+  padding: 0 4px;
+  position: relative;
+  list-style: none;
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.poster {
+  aspect-ratio: 2 / 3;
+  width: 55%;
+  margin-left: 45%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.rank {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-bg);
+  -webkit-text-stroke: 3px var(--color-text-muted);
+  pointer-events: none;
+}
+
+.button {
+  background: none;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}

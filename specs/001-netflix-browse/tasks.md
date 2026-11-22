@@ -33,200 +33,200 @@ description: "Índice de tareas de Netflix Browse Clone"
 
 Ficha: `phases/P01-setup.md`
 
-- [ ] T001 Crear el proyecto Vite en la raíz
-- [ ] T002 Instalar dependencias
-- [ ] T003 Scripts de `package.json`
-- [ ] T004 Configurar Vitest en `vite.config.ts`
-- [ ] T005 `src/test/setup.ts`
-- [ ] T006 `tsconfig.app.json`
-- [ ] T007 [P] Tipos del dominio
-- [ ] T008 [P] Limpiar la plantilla
-- [ ] T009 [P] `index.html`
-- [ ] T010 GATE Setup
+- [X] T001 Crear el proyecto Vite en la raíz
+- [X] T002 Instalar dependencias
+- [X] T003 Scripts de `package.json`
+- [X] T004 Configurar Vitest en `vite.config.ts`
+- [X] T005 `src/test/setup.ts`
+- [X] T006 `tsconfig.app.json`
+- [X] T007 [P] Tipos del dominio
+- [X] T008 [P] Limpiar la plantilla
+- [X] T009 [P] `index.html`
+- [X] T010 GATE Setup
 
 ## P02 · Estilos base y lógica pura
 
 Ficha: `phases/P02-styles-lib.md`
 
-- [ ] T011 `src/styles/tokens.css`
-- [ ] T012 `src/styles/global.css`
-- [ ] T013 [P] `storage`
-- [ ] T014 [P] `filterByProfile`
-- [ ] T015 [P] `searchTitles`
-- [ ] T016 [P] `rowsForView`
-- [ ] T017 [P] `itemsPerPage`
-- [ ] T018 [P] `formatDuration`
-- [ ] T019 [P] `similarTitles`
-- [ ] T020 GATE P02
+- [X] T011 `src/styles/tokens.css`
+- [X] T012 `src/styles/global.css`
+- [X] T013 [P] `storage`
+- [X] T014 [P] `filterByProfile`
+- [X] T015 [P] `searchTitles`
+- [X] T016 [P] `rowsForView`
+- [X] T017 [P] `itemsPerPage`
+- [X] T018 [P] `formatDuration`
+- [X] T019 [P] `similarTitles`
+- [X] T020 GATE P02
 
 ## P03 · Datos del catálogo
 
 Ficha: `phases/P03-data.md`
 
-- [ ] T021 [P] `src/data/profiles.json`
-- [ ] T022 [P] `src/data/notifications.json`
-- [ ] T023 [P] `src/data/titles-01.json`
-- [ ] T024 [P] `src/data/titles-02.json`
-- [ ] T025 [P] `src/data/titles-03.json`
-- [ ] T026 [P] `src/data/titles-04.json`
-- [ ] T027 [P] `src/data/titles-05.json`
-- [ ] T028 [P] `src/data/titles-06.json`
-- [ ] T029 [P] `src/data/rows.json`
-- [ ] T030 `src/data/catalog.ts`
-- [ ] T031 `src/data/catalog.test.ts`
-- [ ] T032 [P] `scripts/generate-placeholders.mjs`
-- [ ] T033 Generar activos
-- [ ] T034 GATE P03
+- [X] T021 [P] `src/data/profiles.json`
+- [X] T022 [P] `src/data/notifications.json`
+- [X] T023 [P] `src/data/titles-01.json`
+- [X] T024 [P] `src/data/titles-02.json`
+- [X] T025 [P] `src/data/titles-03.json`
+- [X] T026 [P] `src/data/titles-04.json`
+- [X] T027 [P] `src/data/titles-05.json`
+- [X] T028 [P] `src/data/titles-06.json`
+- [X] T029 [P] `src/data/rows.json`
+- [X] T030 `src/data/catalog.ts`
+- [X] T031 `src/data/catalog.test.ts`
+- [X] T032 [P] `scripts/generate-placeholders.mjs`
+- [X] T033 Generar activos
+- [X] T034 GATE P03
 
 ## P04 · Estado y esqueleto de la app
 
 Ficha: `phases/P04-state-app.md`
 
-- [ ] T035 `useProfile`
-- [ ] T036 Prueba de `useProfile`
-- [ ] T037 `useMyList`
-- [ ] T038 Prueba de `useMyList`
-- [ ] T039 `useTitleModal`
-- [ ] T040 `SafeImage`
-- [ ] T041 Prueba de `SafeImage`
-- [ ] T042 `AddToListButton`
-- [ ] T043 Prueba de `AddToListButton`
-- [ ] T044 `RootLayout`
-- [ ] T045 `routes.tsx`
-- [ ] T046 `App`
-- [ ] T047 `main.tsx`
-- [ ] T048 `renderWithProviders`
-- [ ] T049 GATE P04
+- [X] T035 `useProfile`
+- [X] T036 Prueba de `useProfile`
+- [X] T037 `useMyList`
+- [X] T038 Prueba de `useMyList`
+- [X] T039 `useTitleModal`
+- [X] T040 `SafeImage`
+- [X] T041 Prueba de `SafeImage`
+- [X] T042 `AddToListButton`
+- [X] T043 Prueba de `AddToListButton`
+- [X] T044 `RootLayout`
+- [X] T045 `routes.tsx`
+- [X] T046 `App`
+- [X] T047 `main.tsx`
+- [X] T048 `renderWithProviders`
+- [X] T049 GATE P04
 
 ## P05 · US1 Cabecera de navegación (P1) 🎯 MVP
 
 Ficha: `phases/P05-us1-header.md`
 
-- [ ] T050 [P] [US1] `useScrolled`
-- [ ] T051 [P] [US1] `Header.module.css`
-- [ ] T052 [US1] `Header.tsx` (primera versión)
-- [ ] T053 [P] [US1] `NotificationsPanel`
-- [ ] T054 [P] [US1] `ProfileMenu`
-- [ ] T055 [US1] `Header.tsx` (añadir panel y menú)
-- [ ] T056 [P] [US1] `BrowsePage` (esqueleto)
-- [ ] T057 [US1] Rutas de navegación
-- [ ] T058 [US1] `Header.test.tsx`
-- [ ] T059 [US1] GATE US1
+- [X] T050 [P] [US1] `useScrolled`
+- [X] T051 [P] [US1] `Header.module.css`
+- [X] T052 [US1] `Header.tsx` (primera versión)
+- [X] T053 [P] [US1] `NotificationsPanel`
+- [X] T054 [P] [US1] `ProfileMenu`
+- [X] T055 [US1] `Header.tsx` (añadir panel y menú)
+- [X] T056 [P] [US1] `BrowsePage` (esqueleto)
+- [X] T057 [US1] Rutas de navegación
+- [X] T058 [US1] `Header.test.tsx`
+- [X] T059 [US1] GATE US1
 
 ## P06 · US2 Título destacado (P1)
 
 Ficha: `phases/P06-us2-hero.md`
 
-- [ ] T060 [P] [US2] `useReducedMotion`
-- [ ] T061 [P] [US2] `Hero.module.css`
-- [ ] T062 [US2] `Hero.tsx`
-- [ ] T063 [US2] `BrowsePage` con hero
-- [ ] T064 [US2] `Hero.test.tsx`
+- [X] T060 [P] [US2] `useReducedMotion`
+- [X] T061 [P] [US2] `Hero.module.css`
+- [X] T062 [US2] `Hero.tsx`
+- [X] T063 [US2] `BrowsePage` con hero
+- [X] T064 [US2] `Hero.test.tsx`
 - [ ] T065 [MANUAL] [US2] Vídeo de muestra
-- [ ] T066 [US2] GATE US2
+- [X] T066 [US2] GATE US2
 
 ## P07 · US3 Filas de títulos (P1)
 
 Ficha: `phases/P07-us3-rows.md`
 
-- [ ] T067 [US3] `useCarousel`
-- [ ] T068 [P] [US3] `TitleCard.module.css`
-- [ ] T069 [US3] `TitleCard.tsx` (primera versión)
-- [ ] T070 [P] [US3] `Row.module.css`
-- [ ] T071 [US3] `Row.tsx`
-- [ ] T072 [US3] `BrowsePage` con filas
-- [ ] T073 [US3] `Row.test.tsx`
-- [ ] T074 [US3] GATE US3
+- [X] T067 [US3] `useCarousel`
+- [X] T068 [P] [US3] `TitleCard.module.css`
+- [X] T069 [US3] `TitleCard.tsx` (primera versión)
+- [X] T070 [P] [US3] `Row.module.css`
+- [X] T071 [US3] `Row.tsx`
+- [X] T072 [US3] `BrowsePage` con filas
+- [X] T073 [US3] `Row.test.tsx`
+- [X] T074 [US3] GATE US3
 
 ## P08 · US4 Tarjeta con previsualización (P1)
 
 Ficha: `phases/P08-us4-preview.md`
 
-- [ ] T075 [US4] `useHoverPreview`
-- [ ] T076 [P] [US4] `CardPreview.module.css`
-- [ ] T077 [US4] `CardPreview.tsx`
-- [ ] T078 [US4] `TitleCard.tsx` con previsualización
-- [ ] T079 [US4] `TitleCard.test.tsx`
-- [ ] T080 [US4] GATE US4
+- [X] T075 [US4] `useHoverPreview`
+- [X] T076 [P] [US4] `CardPreview.module.css`
+- [X] T077 [US4] `CardPreview.tsx`
+- [X] T078 [US4] `TitleCard.tsx` con previsualización
+- [X] T079 [US4] `TitleCard.test.tsx`
+- [X] T080 [US4] GATE US4
 
 ## P09 · US5 Detalle de título (P2)
 
 Ficha: `phases/P09-us5-detail.md`
 
-- [ ] T081 [P] [US5] `useFocusTrap`
-- [ ] T082 [P] [US5] `Modal.module.css`
-- [ ] T083 [US5] `Modal.tsx`
-- [ ] T084 [US5] `Modal.test.tsx`
-- [ ] T085 [P] [US5] `TitleModal.module.css`
-- [ ] T086 [US5] `TitleModal.tsx`
-- [ ] T087 [P] [US5] `TitleModalHost`
-- [ ] T088 [US5] `RootLayout` con host del modal
-- [ ] T089 [US5] `TitleModal.test.tsx`
-- [ ] T090 [US5] GATE US5
+- [X] T081 [P] [US5] `useFocusTrap`
+- [X] T082 [P] [US5] `Modal.module.css`
+- [X] T083 [US5] `Modal.tsx`
+- [X] T084 [US5] `Modal.test.tsx`
+- [X] T085 [P] [US5] `TitleModal.module.css`
+- [X] T086 [US5] `TitleModal.tsx`
+- [X] T087 [P] [US5] `TitleModalHost`
+- [X] T088 [US5] `RootLayout` con host del modal
+- [X] T089 [US5] `TitleModal.test.tsx`
+- [X] T090 [US5] GATE US5
 
 ## P10 · US6 Mi lista (P2)
 
 Ficha: `phases/P10-us6-mylist.md`
 
-- [ ] T091 [P] [US6] `TitleGrid`
-- [ ] T092 [US6] `MyListPage`
-- [ ] T093 [US6] Ruta `/my-list`
-- [ ] T094 [US6] `MyListPage.test.tsx`
-- [ ] T095 [US6] GATE US6
+- [X] T091 [P] [US6] `TitleGrid`
+- [X] T092 [US6] `MyListPage`
+- [X] T093 [US6] Ruta `/my-list`
+- [X] T094 [US6] `MyListPage.test.tsx`
+- [X] T095 [US6] GATE US6
 
 ## P11 · US7 Búsqueda (P2)
 
 Ficha: `phases/P11-us7-search.md`
 
-- [ ] T096 [P] [US7] `useDebouncedValue`
-- [ ] T097 [P] [US7] `SearchBox.module.css`
-- [ ] T098 [US7] `SearchBox.tsx`
-- [ ] T099 [US7] `Header.tsx` con buscador
-- [ ] T100 [US7] `SearchPage`
-- [ ] T101 [US7] Ruta `/search`
-- [ ] T102 [US7] `SearchBox.test.tsx`
-- [ ] T103 [US7] `SearchPage.test.tsx`
-- [ ] T104 [US7] GATE US7
+- [X] T096 [P] [US7] `useDebouncedValue`
+- [X] T097 [P] [US7] `SearchBox.module.css`
+- [X] T098 [US7] `SearchBox.tsx`
+- [X] T099 [US7] `Header.tsx` con buscador
+- [X] T100 [US7] `SearchPage`
+- [X] T101 [US7] Ruta `/search`
+- [X] T102 [US7] `SearchBox.test.tsx`
+- [X] T103 [US7] `SearchPage.test.tsx`
+- [X] T104 [US7] GATE US7
 
 ## P12 · US8 Selección de perfil (P3)
 
 Ficha: `phases/P12-us8-profiles.md`
 
-- [ ] T105 [P] [US8] `ProfileGate`
-- [ ] T106 [P] [US8] `ProfilesPage`
-- [ ] T107 [P] [US8] `RequireProfile`
-- [ ] T108 [P] [US8] `HomeRedirect`
-- [ ] T109 [US8] Rutas con protección
-- [ ] T110 [US8] `ProfileGate.test.tsx`
-- [ ] T111 [US8] `BrowsePage.kids.test.tsx`
-- [ ] T112 [US8] GATE US8
+- [X] T105 [P] [US8] `ProfileGate`
+- [X] T106 [P] [US8] `ProfilesPage`
+- [X] T107 [P] [US8] `RequireProfile`
+- [X] T108 [P] [US8] `HomeRedirect`
+- [X] T109 [US8] Rutas con protección
+- [X] T110 [US8] `ProfileGate.test.tsx`
+- [X] T111 [US8] `BrowsePage.kids.test.tsx`
+- [X] T112 [US8] GATE US8
 
 ## P13 · US9 Reproductor simulado (P3)
 
 Ficha: `phases/P13-us9-player.md`
 
-- [ ] T113 [P] [US9] `usePlayerShortcuts`
-- [ ] T114 [P] [US9] `Player.module.css`
-- [ ] T115 [US9] `Player.tsx`
-- [ ] T116 [P] [US9] `WatchPage`
-- [ ] T117 [US9] Ruta `/watch/:id`
-- [ ] T118 [US9] `Player.test.tsx`
-- [ ] T119 [US9] GATE US9
+- [X] T113 [P] [US9] `usePlayerShortcuts`
+- [X] T114 [P] [US9] `Player.module.css`
+- [X] T115 [US9] `Player.tsx`
+- [X] T116 [P] [US9] `WatchPage`
+- [X] T117 [US9] Ruta `/watch/:id`
+- [X] T118 [US9] `Player.test.tsx`
+- [X] T119 [US9] GATE US9
 
 ## P14 · Pulido y comprobaciones finales
 
 Ficha: `phases/P14-polish.md`
 
-- [ ] T120 [P] README
-- [ ] T121 Lint
-- [ ] T122 [P] Imágenes solo con `SafeImage`
-- [ ] T123 [P] Sin `any`
+- [X] T120 [P] README
+- [X] T121 Lint
+- [X] T122 [P] Imágenes solo con `SafeImage`
+- [X] T123 [P] Sin `any`
 - [ ] T124 [MANUAL] Contraste
 - [ ] T125 [MANUAL] Teclado
 - [ ] T126 [MANUAL] Responsive
 - [ ] T127 [MANUAL] Movimiento reducido
 - [ ] T128 [MANUAL] Recorrido por historias
-- [ ] T129 GATE FINAL
+- [X] T129 GATE FINAL
 
 ## Dependencias
 

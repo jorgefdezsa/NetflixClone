@@ -1,0 +1,663 @@
+[
+  {
+    "id": "t-051",
+    "type": "series",
+    "name": "Señal Perdida",
+    "synopsis": "Una radioaficionada capta mensajes enviados desde el futuro.",
+    "year": 2026,
+    "rating": "12+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Interferencia",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 54
+          },
+          {
+            "number": 2,
+            "name": "Frecuencia",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 45
+          },
+          {
+            "number": 3,
+            "name": "Eco",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 52
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Coordenadas",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 43
+          },
+          {
+            "number": 2,
+            "name": "Bucle",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 50
+          },
+          {
+            "number": 3,
+            "name": "Transmisión",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 41
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Ciencia ficción"
+    ],
+    "cast": [
+      "Irene Lago",
+      "Joaquín Arce"
+    ],
+    "poster": "/assets/posters/t-051.svg",
+    "banner": "/assets/banners/t-051.svg",
+    "addedAt": "2026-10-18"
+  },
+  {
+    "id": "t-052",
+    "type": "series",
+    "name": "El Valle",
+    "synopsis": "Un pueblo aislado esconde un pacto que dura ya tres siglos.",
+    "year": 2026,
+    "rating": "16+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La llegada",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 41
+          },
+          {
+            "number": 2,
+            "name": "El pacto",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 48
+          },
+          {
+            "number": 3,
+            "name": "Desaparecidos",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 55
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La ermita",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 46
+          },
+          {
+            "number": 2,
+            "name": "Rituales",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 53
+          },
+          {
+            "number": 3,
+            "name": "El valle",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 44
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Suspense"
+    ],
+    "cast": [
+      "Ignacio Torres",
+      "Noelia Fuentes"
+    ],
+    "poster": "/assets/posters/t-052.svg",
+    "banner": "/assets/banners/t-052.svg",
+    "addedAt": "2026-11-05"
+  },
+  {
+    "id": "t-053",
+    "type": "series",
+    "name": "Colonia 7",
+    "synopsis": "Los primeros colonos de Marte descubren que no están solos.",
+    "year": 2026,
+    "rating": "12+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Aterrizaje",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 44
+          },
+          {
+            "number": 2,
+            "name": "Oxígeno",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 51
+          },
+          {
+            "number": 3,
+            "name": "Huellas",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 42
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La cúpula",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 49
+          },
+          {
+            "number": 2,
+            "name": "Señales",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 40
+          },
+          {
+            "number": 3,
+            "name": "Contacto",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 47
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Ciencia ficción"
+    ],
+    "cast": [
+      "Pilar Echevarría",
+      "Diego Salcedo"
+    ],
+    "poster": "/assets/posters/t-053.svg",
+    "banner": "/assets/banners/t-053.svg",
+    "addedAt": "2026-10-12"
+  },
+  {
+    "id": "t-054",
+    "type": "series",
+    "name": "Expediente Cero",
+    "synopsis": "Una inspectora reabre un caso archivado que todos quieren olvidar.",
+    "year": 2026,
+    "rating": "18+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "El archivo",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 47
+          },
+          {
+            "number": 2,
+            "name": "Testigos",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 54
+          },
+          {
+            "number": 3,
+            "name": "La foto",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 45
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "El topo",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 52
+          },
+          {
+            "number": 2,
+            "name": "Confesión",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 43
+          },
+          {
+            "number": 3,
+            "name": "Cero",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 50
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Suspense"
+    ],
+    "cast": [
+      "Beatriz Olmo",
+      "Raúl Marín"
+    ],
+    "poster": "/assets/posters/t-054.svg",
+    "banner": "/assets/banners/t-054.svg",
+    "addedAt": "2026-11-19"
+  },
+  {
+    "id": "t-055",
+    "type": "series",
+    "name": "Mente Prestada",
+    "synopsis": "Un programador despierta en el cuerpo de otra persona.",
+    "year": 2026,
+    "rating": "16+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Despertar",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 50
+          },
+          {
+            "number": 2,
+            "name": "Recuerdos",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 41
+          },
+          {
+            "number": 3,
+            "name": "Código",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 48
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Doble",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 55
+          },
+          {
+            "number": 2,
+            "name": "Servidor",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 46
+          },
+          {
+            "number": 3,
+            "name": "Reinicio",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 53
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Ciencia ficción",
+      "Suspense"
+    ],
+    "cast": [
+      "Álvaro Rey",
+      "Carla Benet"
+    ],
+    "poster": "/assets/posters/t-055.svg",
+    "banner": "/assets/banners/t-055.svg",
+    "addedAt": "2026-10-06"
+  },
+  {
+    "id": "t-056",
+    "type": "series",
+    "name": "La Desconocida",
+    "synopsis": "Una mujer sin memoria aparece en la puerta de una familia que la llama hija.",
+    "year": 2026,
+    "rating": "16+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La puerta",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 53
+          },
+          {
+            "number": 2,
+            "name": "Fotos",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 44
+          },
+          {
+            "number": 3,
+            "name": "Mentiras",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 51
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "La cicatriz",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 42
+          },
+          {
+            "number": 2,
+            "name": "El hermano",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 49
+          },
+          {
+            "number": 3,
+            "name": "Verdad",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 40
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Suspense"
+    ],
+    "cast": [
+      "Diana Prats",
+      "Germán Vidal"
+    ],
+    "poster": "/assets/posters/t-056.svg",
+    "banner": "/assets/banners/t-056.svg",
+    "addedAt": "2026-11-13"
+  },
+  {
+    "id": "t-057",
+    "type": "series",
+    "name": "Horizonte",
+    "synopsis": "La tripulación de una nave generacional olvida hacia dónde viaja.",
+    "year": 2024,
+    "rating": "12+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Generación",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 40
+          },
+          {
+            "number": 2,
+            "name": "Motor",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 47
+          },
+          {
+            "number": 3,
+            "name": "Archivo",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 54
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Motín",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 45
+          },
+          {
+            "number": 2,
+            "name": "Mapa estelar",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 52
+          },
+          {
+            "number": 3,
+            "name": "Horizonte",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 43
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Ciencia ficción"
+    ],
+    "cast": [
+      "Hugo Medina",
+      "Silvia Marcos"
+    ],
+    "poster": "/assets/posters/t-057.svg",
+    "banner": "/assets/banners/t-057.svg",
+    "addedAt": "2026-04-08"
+  },
+  {
+    "id": "t-058",
+    "type": "series",
+    "name": "Doble Juego",
+    "synopsis": "Un agente infiltrado ya no sabe para qué bando trabaja.",
+    "year": 2023,
+    "rating": "18+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Tapadera",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 43
+          },
+          {
+            "number": 2,
+            "name": "Contacto",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 50
+          },
+          {
+            "number": 3,
+            "name": "Sospecha",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 41
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Prueba",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 48
+          },
+          {
+            "number": 2,
+            "name": "Fuga",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 55
+          },
+          {
+            "number": 3,
+            "name": "Final",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 46
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Suspense"
+    ],
+    "cast": [
+      "Marcos Ibarra",
+      "Marta Quintana"
+    ],
+    "poster": "/assets/posters/t-058.svg",
+    "banner": "/assets/banners/t-058.svg",
+    "addedAt": "2026-05-15"
+  },
+  {
+    "id": "t-059",
+    "type": "series",
+    "name": "Paradoja",
+    "synopsis": "Una física provoca un accidente que divide su ciudad en dos líneas temporales.",
+    "year": 2022,
+    "rating": "12+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "El experimento",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 46
+          },
+          {
+            "number": 2,
+            "name": "Grietas",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 53
+          },
+          {
+            "number": 3,
+            "name": "Dos ciudades",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 44
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Reflejo",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 51
+          },
+          {
+            "number": 2,
+            "name": "Convergencia",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 42
+          },
+          {
+            "number": 3,
+            "name": "Paradoja",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 49
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Ciencia ficción"
+    ],
+    "cast": [
+      "Clara Iborra",
+      "Javier Sanz"
+    ],
+    "poster": "/assets/posters/t-059.svg",
+    "banner": "/assets/banners/t-059.svg",
+    "addedAt": "2026-06-22"
+  },
+  {
+    "id": "t-060",
+    "type": "series",
+    "name": "Noche Cerrada",
+    "synopsis": "Un taxista nocturno se ve implicado en una serie de crímenes.",
+    "year": 2021,
+    "rating": "18+",
+    "seasons": [
+      {
+        "number": 1,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Primera carrera",
+            "synopsis": "Todo empieza a cambiar.",
+            "durationMinutes": 49
+          },
+          {
+            "number": 2,
+            "name": "La pasajera",
+            "synopsis": "Surge una pista inesperada.",
+            "durationMinutes": 40
+          },
+          {
+            "number": 3,
+            "name": "Retrovisor",
+            "synopsis": "Una decisión lo complica todo.",
+            "durationMinutes": 47
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "episodes": [
+          {
+            "number": 1,
+            "name": "Atasco",
+            "synopsis": "Un viejo conocido regresa.",
+            "durationMinutes": 54
+          },
+          {
+            "number": 2,
+            "name": "Persecución",
+            "synopsis": "La verdad sale a la luz.",
+            "durationMinutes": 45
+          },
+          {
+            "number": 3,
+            "name": "Última parada",
+            "synopsis": "Nada volverá a ser igual.",
+            "durationMinutes": 52
+          }
+        ]
+      }
+    ],
+    "genres": [
+      "Suspense"
+    ],
+    "cast": [
+      "Iván Rosales",
+      "Lidia Báez"
+    ],
+    "poster": "/assets/posters/t-060.svg",
+    "banner": "/assets/banners/t-060.svg",
+    "addedAt": "2026-07-01"
+  }
+]
