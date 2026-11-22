@@ -33,16 +33,16 @@ description: "Índice de tareas de Netflix Browse Clone"
 
 Ficha: `phases/P01-setup.md`
 
-- [ ] T001 Crear el proyecto Vite en la raíz
-- [ ] T002 Instalar dependencias
-- [ ] T003 Scripts de `package.json`
-- [ ] T004 Configurar Vitest en `vite.config.ts`
-- [ ] T005 `src/test/setup.ts`
-- [ ] T006 `tsconfig.app.json`
-- [ ] T007 [P] Tipos del dominio
-- [ ] T008 [P] Limpiar la plantilla
-- [ ] T009 [P] `index.html`
-- [ ] T010 GATE Setup
+- [X] T001 Crear el proyecto Vite en la raíz
+- [X] T002 Instalar dependencias
+- [X] T003 Scripts de `package.json`
+- [X] T004 Configurar Vitest en `vite.config.ts`
+- [X] T005 `src/test/setup.ts`
+- [X] T006 `tsconfig.app.json`
+- [X] T007 [P] Tipos del dominio
+- [X] T008 [P] Limpiar la plantilla
+- [X] T009 [P] `index.html`
+- [X] T010 GATE Setup
 
 ## P02 · Estilos base y lógica pura
 
