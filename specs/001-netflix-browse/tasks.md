@@ -168,11 +168,11 @@ Ficha: `phases/P09-us5-detail.md`
 
 Ficha: `phases/P10-us6-mylist.md`
 
-- [ ] T091 [P] [US6] `TitleGrid`
-- [ ] T092 [US6] `MyListPage`
-- [ ] T093 [US6] Ruta `/my-list`
-- [ ] T094 [US6] `MyListPage.test.tsx`
-- [ ] T095 [US6] GATE US6
+- [X] T091 [P] [US6] `TitleGrid`
+- [X] T092 [US6] `MyListPage`
+- [X] T093 [US6] Ruta `/my-list`
+- [X] T094 [US6] `MyListPage.test.tsx`
+- [X] T095 [US6] GATE US6
 
 ## P11 · US7 Búsqueda (P2)
 
