@@ -63,20 +63,20 @@ Ficha: `phases/P02-styles-lib.md`
 
 Ficha: `phases/P03-data.md`
 
-- [ ] T021 [P] `src/data/profiles.json`
-- [ ] T022 [P] `src/data/notifications.json`
-- [ ] T023 [P] `src/data/titles-01.json`
-- [ ] T024 [P] `src/data/titles-02.json`
-- [ ] T025 [P] `src/data/titles-03.json`
-- [ ] T026 [P] `src/data/titles-04.json`
-- [ ] T027 [P] `src/data/titles-05.json`
-- [ ] T028 [P] `src/data/titles-06.json`
-- [ ] T029 [P] `src/data/rows.json`
-- [ ] T030 `src/data/catalog.ts`
-- [ ] T031 `src/data/catalog.test.ts`
-- [ ] T032 [P] `scripts/generate-placeholders.mjs`
-- [ ] T033 Generar activos
-- [ ] T034 GATE P03
+- [X] T021 [P] `src/data/profiles.json`
+- [X] T022 [P] `src/data/notifications.json`
+- [X] T023 [P] `src/data/titles-01.json`
+- [X] T024 [P] `src/data/titles-02.json`
+- [X] T025 [P] `src/data/titles-03.json`
+- [X] T026 [P] `src/data/titles-04.json`
+- [X] T027 [P] `src/data/titles-05.json`
+- [X] T028 [P] `src/data/titles-06.json`
+- [X] T029 [P] `src/data/rows.json`
+- [X] T030 `src/data/catalog.ts`
+- [X] T031 `src/data/catalog.test.ts`
+- [X] T032 [P] `scripts/generate-placeholders.mjs`
+- [X] T033 Generar activos
+- [X] T034 GATE P03
 
 ## P04 · Estado y esqueleto de la app
 

@@ -1,0 +1,6 @@
+[
+  { "id": "p-1", "name": "Jorge", "avatar": "/assets/avatars/p-1.svg", "isKids": false },
+  { "id": "p-2", "name": "Ana", "avatar": "/assets/avatars/p-2.svg", "isKids": false },
+  { "id": "p-3", "name": "Marcos", "avatar": "/assets/avatars/p-3.svg", "isKids": false },
+  { "id": "p-4", "name": "Infantil", "avatar": "/assets/avatars/p-4.svg", "isKids": true }
+]

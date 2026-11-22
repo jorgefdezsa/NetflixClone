@@ -1,0 +1,194 @@
+[
+  {
+    "id": "t-001",
+    "type": "movie",
+    "name": "Cruce de Fuego",
+    "synopsis": "Una agente retirada vuelve para detener un atraco imposible.",
+    "year": 2025,
+    "rating": "16+",
+    "durationMinutes": 112,
+    "genres": [
+      "Acción"
+    ],
+    "cast": [
+      "Lucía Vera",
+      "Mario Ortega"
+    ],
+    "poster": "/assets/posters/t-001.svg",
+    "banner": "/assets/banners/t-001.svg",
+    "addedAt": "2026-02-08"
+  },
+  {
+    "id": "t-002",
+    "type": "movie",
+    "name": "La Ruta del Cóndor",
+    "synopsis": "Dos pilotos rivales cruzan los Andes con un cargamento que nadie debe ver.",
+    "year": 2023,
+    "rating": "12+",
+    "durationMinutes": 124,
+    "genres": [
+      "Aventura",
+      "Acción"
+    ],
+    "cast": [
+      "Diego Salcedo",
+      "Irene Lago"
+    ],
+    "poster": "/assets/posters/t-002.svg",
+    "banner": "/assets/banners/t-002.svg",
+    "addedAt": "2026-03-15"
+  },
+  {
+    "id": "t-003",
+    "type": "movie",
+    "name": "Frontera Roja",
+    "synopsis": "Un guardia de aduanas descubre que su jefe trafica con armas.",
+    "year": 2022,
+    "rating": "16+",
+    "durationMinutes": 101,
+    "genres": [
+      "Acción"
+    ],
+    "cast": [
+      "Raúl Marín",
+      "Sonia Castell"
+    ],
+    "poster": "/assets/posters/t-003.svg",
+    "banner": "/assets/banners/t-003.svg",
+    "addedAt": "2026-04-22"
+  },
+  {
+    "id": "t-004",
+    "type": "movie",
+    "name": "El Último Mapa",
+    "synopsis": "Una cartógrafa sigue un mapa antiguo hasta una isla que no figura en ningún atlas.",
+    "year": 2021,
+    "rating": "12+",
+    "durationMinutes": 118,
+    "genres": [
+      "Aventura"
+    ],
+    "cast": [
+      "Clara Iborra",
+      "Tomás Lerma"
+    ],
+    "poster": "/assets/posters/t-004.svg",
+    "banner": "/assets/banners/t-004.svg",
+    "addedAt": "2026-05-01"
+  },
+  {
+    "id": "t-005",
+    "type": "movie",
+    "name": "Velocidad Cero",
+    "synopsis": "Un piloto de carreras debe impedir que un tren sin frenos llegue a la ciudad.",
+    "year": 2024,
+    "rating": "12+",
+    "durationMinutes": 97,
+    "genres": [
+      "Acción"
+    ],
+    "cast": [
+      "Hugo Medina",
+      "Nerea Pons"
+    ],
+    "poster": "/assets/posters/t-005.svg",
+    "banner": "/assets/banners/t-005.svg",
+    "addedAt": "2026-06-08"
+  },
+  {
+    "id": "t-006",
+    "type": "movie",
+    "name": "Tormenta de Arena",
+    "synopsis": "Un equipo de rescate queda atrapado en el desierto durante la peor tormenta del siglo.",
+    "year": 2026,
+    "rating": "12+",
+    "durationMinutes": 109,
+    "genres": [
+      "Aventura",
+      "Acción"
+    ],
+    "cast": [
+      "Alba Rentería",
+      "Javier Sanz"
+    ],
+    "poster": "/assets/posters/t-006.svg",
+    "banner": "/assets/banners/t-006.svg",
+    "addedAt": "2026-11-03"
+  },
+  {
+    "id": "t-007",
+    "type": "movie",
+    "name": "Operación Medianoche",
+    "synopsis": "Un comando tiene seis horas para liberar a un científico secuestrado.",
+    "year": 2026,
+    "rating": "16+",
+    "durationMinutes": 115,
+    "genres": [
+      "Acción"
+    ],
+    "cast": [
+      "Marcos Ibarra",
+      "Lucía Vera"
+    ],
+    "poster": "/assets/posters/t-007.svg",
+    "banner": "/assets/banners/t-007.svg",
+    "addedAt": "2026-10-10"
+  },
+  {
+    "id": "t-008",
+    "type": "movie",
+    "name": "Los Guardianes del Glaciar",
+    "synopsis": "Una expedición polar encuentra algo que lleva siglos bajo el hielo.",
+    "year": 2025,
+    "rating": "12+",
+    "durationMinutes": 131,
+    "genres": [
+      "Aventura"
+    ],
+    "cast": [
+      "Pilar Echevarría",
+      "Andrés Bueno"
+    ],
+    "poster": "/assets/posters/t-008.svg",
+    "banner": "/assets/banners/t-008.svg",
+    "addedAt": "2026-11-17"
+  },
+  {
+    "id": "t-009",
+    "type": "movie",
+    "name": "Sin Retorno",
+    "synopsis": "Un exconvicto acepta un último trabajo que sale terriblemente mal.",
+    "year": 2026,
+    "rating": "16+",
+    "durationMinutes": 104,
+    "genres": [
+      "Acción"
+    ],
+    "cast": [
+      "Iván Rosales",
+      "Marta Quintana"
+    ],
+    "poster": "/assets/posters/t-009.svg",
+    "banner": "/assets/banners/t-009.svg",
+    "addedAt": "2026-10-04"
+  },
+  {
+    "id": "t-010",
+    "type": "movie",
+    "name": "Jungla de Cristal Azul",
+    "synopsis": "Una bióloga y un guía buscan una orquídea legendaria en la selva amazónica.",
+    "year": 2025,
+    "rating": "12+",
+    "durationMinutes": 122,
+    "genres": [
+      "Aventura"
+    ],
+    "cast": [
+      "Eva Montero",
+      "Rubén Calvo"
+    ],
+    "poster": "/assets/posters/t-010.svg",
+    "banner": "/assets/banners/t-010.svg",
+    "addedAt": "2026-11-11"
+  }
+]
