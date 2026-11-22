@@ -30,6 +30,10 @@ npm run dev      # http://localhost:5173
 
 Puerta de calidad antes de cada commit: `npm run lint && npm run typecheck && npm test && npm run build`.
 
+## Integración continua
+
+GitHub Actions ejecuta `npm run build` en cada push y pull request. El check **Build** debe completarse correctamente para poder integrar un pull request en `main`.
+
 ## Estructura
 
 ```text
