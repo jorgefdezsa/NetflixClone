@@ -14,3 +14,7 @@
 
 ## P06
 - **T065 (MANUAL)**: pendiente. No existe `public/assets/video/sample.mp4`; sin él el `<video>` falla, se oculta por `onError` y el hero muestra el banner. Para activarlo, copiar un vídeo corto (≤ 15 s) con ese nombre.
+
+## P08
+- **T078 — foco dentro de la tarjeta**: la ficha pasa `handlers.onBlur` tal cual al `<li>`, pero `blur` burbujea: al tabular del botón de la tarjeta a `preview-play` se cerraba la previsualización y los botones eran inalcanzables con teclado. `TitleCard` envuelve `onBlur` y solo cierra si el foco sale de la tarjeta (`relatedTarget` fuera del `<li>`). `useHoverPreview` no cambia. Cubierto por una prueba extra en `TitleCard.test.tsx`.
+- **T077**: "1 temporada" en singular cuando una serie tiene una sola; el catálogo actual siempre tiene 2.

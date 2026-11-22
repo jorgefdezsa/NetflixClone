@@ -142,12 +142,12 @@ Ficha: `phases/P07-us3-rows.md`
 
 Ficha: `phases/P08-us4-preview.md`
 
-- [ ] T075 [US4] `useHoverPreview`
-- [ ] T076 [P] [US4] `CardPreview.module.css`
-- [ ] T077 [US4] `CardPreview.tsx`
-- [ ] T078 [US4] `TitleCard.tsx` con previsualización
-- [ ] T079 [US4] `TitleCard.test.tsx`
-- [ ] T080 [US4] GATE US4
+- [X] T075 [US4] `useHoverPreview`
+- [X] T076 [P] [US4] `CardPreview.module.css`
+- [X] T077 [US4] `CardPreview.tsx`
+- [X] T078 [US4] `TitleCard.tsx` con previsualización
+- [X] T079 [US4] `TitleCard.test.tsx`
+- [X] T080 [US4] GATE US4
 
 ## P09 · US5 Detalle de título (P2)
 
