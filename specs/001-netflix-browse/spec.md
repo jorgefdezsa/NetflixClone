@@ -1,252 +1,226 @@
 # Feature Specification: Netflix Browse Clone
 
-**Feature Branch**: `001-netflix-browse`
+| Campo | Valor |
+|---|---|
+| **Feature Branch** | `001-netflix-browse` |
+| **Created** | 2026-11-21 |
+| **Status** | Draft |
+| **Idioma de la interfaz** | Español de España |
+| **Alcance** | Réplica visual y funcional de `/browse` (usuario ya logueado) para una demo local educativa |
 
-**Created**: 2026-11-21
-
-**Status**: Draft
-
-**Input**: User description: "Réplica visual y funcional de la página de exploración de Netflix (/browse), tal como la ve un usuario ya logueado, para una demo local educativa. Interfaz en español de España. Un título destacado a pantalla completa y filas horizontales de títulos por categoría, con una experiencia de navegación cercana a la original."
+**Input**: título destacado a pantalla completa y filas horizontales de títulos por categoría, con una experiencia cercana a la original.
 
 ## Clarifications
 
 ### Session 2026-11-21
 
-- Q: ¿Qué clasificaciones de edad se consideran aptas para el perfil Infantil? → A: Solo `TP` y `7+`.
-- Q: ¿Se usa el mismo vídeo de muestra en el reproductor y en el fondo del título destacado? → A: Sí, un único clip de muestra local para todo.
-- Q: ¿Qué hacen los enlaces Series, Películas y Novedades populares? → A: Filtran el inicio: Series y Películas muestran las filas de ese tipo; Novedades populares muestra las filas de lo más reciente.
-- Q: ¿Qué ocurre al pulsar el icono de notificaciones? → A: Se abre un panel desplegable con 3 avisos de ejemplo estáticos, cerrable con Escape.
+| # | Pregunta | Respuesta |
+|---|---|---|
+| Q1 | ¿Qué clasificaciones aptas para el perfil Infantil? | Solo `TP` y `7+`. |
+| Q2 | ¿Mismo vídeo en reproductor y hero? | Sí, un único clip local para todo. |
+| Q3 | ¿Qué hacen Series, Películas y Novedades populares? | Filtran el inicio: Series y Películas muestran las filas de ese tipo; Novedades populares, las de lo más reciente. |
+| Q4 | ¿Qué hace el icono de notificaciones? | Panel desplegable con 3 avisos estáticos, cerrable con Escape. |
 
 ## User Scenarios & Testing *(mandatory)*
 
-### User Story 1 - Cabecera de navegación (Priority: P1)
+Cada historia es independiente, probable por separado y tiene prioridad. Un escenario = `US#-A#`.
 
-Como espectador quiero una cabecera fija con logotipo, enlaces de navegación (Inicio, Series, Películas, Novedades populares, Mi lista), buscador, notificaciones y menú de perfil, para moverme por el catálogo de forma intuitiva.
+### US1 · Cabecera de navegación — P1
 
-**Why this priority**: es el marco de toda la experiencia; sin ella no hay forma de acceder al resto de secciones. Es la base visible de la demo.
+**Como** espectador **quiero** una cabecera fija con logotipo, enlaces (Inicio, Series, Películas, Novedades populares, Mi lista), buscador, notificaciones y menú de perfil **para** moverme por el catálogo.
+**Por qué P1**: es el marco de toda la experiencia.
+**Prueba independiente**: abrir la página y comprobar cabecera, scroll y menú de perfil.
 
-**Independent Test**: se puede probar abriendo la página y comprobando la cabecera, el scroll y el menú de perfil, sin que existan aún el resto de secciones.
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US1-A1 | la página recién cargada arriba | la observo | la cabecera es transparente con logotipo, enlaces, buscador, notificaciones y perfil |
+| US1-A2 | la cabecera transparente | hago scroll abajo | pasa a fondo sólido y sigue fija |
+| US1-A3 | una pantalla estrecha | veo la cabecera | los enlaces se agrupan en un menú desplegable |
+| US1-A4 | la cabecera visible | abro el menú de perfil | veo los perfiles y "Cerrar sesión" (simulada) |
+| US1-A5 | la página de inicio | pulso Series, Películas o Novedades populares | solo se muestran las filas de esa vista; "Inicio" las muestra todas |
+| US1-A6 | la cabecera visible | pulso notificaciones | se abre un panel con 3 avisos que se cierra con Escape o al pulsar fuera |
 
-**Acceptance Scenarios**:
+### US2 · Título destacado (hero) — P1
 
-1. **Given** la página recién cargada en la parte superior, **When** la observo, **Then** la cabecera es transparente y muestra logotipo, enlaces, buscador, notificaciones y perfil.
-2. **Given** la cabecera transparente, **When** hago scroll hacia abajo, **Then** pasa a fondo sólido y sigue fija en pantalla.
-3. **Given** una pantalla estrecha (móvil), **When** veo la cabecera, **Then** los enlaces de navegación se agrupan en un menú desplegable.
-4. **Given** la cabecera visible, **When** abro el menú de perfil, **Then** veo la lista de perfiles y la opción "Cerrar sesión" (simulada).
-5. **Given** la página de inicio, **When** pulso "Series" o "Películas", **Then** el inicio muestra solo las filas de ese tipo; con "Novedades populares" muestra las filas de lo más reciente; con "Inicio" vuelve a mostrar todas.
-6. **Given** la cabecera visible, **When** pulso el icono de notificaciones, **Then** se abre un panel con 3 avisos de ejemplo que se cierra con Escape o al pulsar fuera.
+**Como** espectador **quiero** un título destacado a ancho completo con imagen o vídeo, título, sinopsis, etiqueta de edad y botones "Reproducir" y "Más información".
+**Por qué P1**: primer impacto visual.
+**Prueba independiente**: cargar la página y verificar contenido, legibilidad y ambos botones.
 
----
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US2-A1 | la página cargada | la veo | hay un título destacado a ancho completo con sinopsis, edad y ambos botones |
+| US2-A2 | el título destacado | pulso "Más información" | se abre el detalle |
+| US2-A3 | el título destacado | pulso "Reproducir" | se abre el reproductor simulado |
+| US2-A4 | una imagen de fondo clara | leo el texto | sigue legible gracias a un degradado |
+| US2-A5 | movimiento reducido activado | carga la página | el vídeo no se reproduce y se muestra una imagen fija |
 
-### User Story 2 - Título destacado (hero) (Priority: P1)
+### US3 · Filas de títulos (carruseles) — P1
 
-Como espectador quiero un título destacado a ancho completo, con imagen o vídeo de fondo, título o logotipo, sinopsis breve, etiqueta de edad y botones "Reproducir" y "Más información", para interactuar enseguida con contenido relevante.
+**Como** espectador **quiero** filas por categoría ("Tendencias", "Porque has visto…", "Top 10 en España", "Series de TV", "Películas de acción") con desplazamiento horizontal paginado.
+**Por qué P1**: es el corazón de la exploración.
+**Prueba independiente**: navegar una fila con ratón, teclado y táctil y comprobar extremos y tarjetas visibles.
 
-**Why this priority**: es el primer impacto visual de la página y define la identidad de la réplica.
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US3-A1 | una fila | paso el ratón por encima | aparecen las flechas anterior y siguiente |
+| US3-A2 | una fila | pulso siguiente, uso teclado o deslizo | avanza una página |
+| US3-A3 | el inicio o el final | llego a un extremo | la flecha correspondiente se oculta o deshabilita |
+| US3-A4 | distintos anchos | cambio el tamaño de ventana | se ven 6, 5, 4, 3 o 2 tarjetas |
+| US3-A5 | la fila "Top 10 en España" | la veo | cada póster muestra un número grande |
 
-**Independent Test**: se prueba cargando la página y verificando el contenido, la legibilidad del texto y la acción de ambos botones.
+### US4 · Tarjeta con previsualización — P1
 
-**Acceptance Scenarios**:
+**Como** espectador **quiero** que al pasar el ratón o enfocar una tarjeta esta se amplíe con acciones (reproducir, añadir a mi lista, me gusta, más información), duración o temporadas, edad y géneros.
+**Por qué P1**: conecta las filas con las acciones principales.
+**Prueba independiente**: ratón y teclado sobre una tarjeta; la fila no se desplaza.
 
-1. **Given** la página cargada, **When** la veo, **Then** aparece un título destacado a ancho completo con sinopsis, etiqueta de edad y los botones "Reproducir" y "Más información".
-2. **Given** el título destacado, **When** pulso "Más información", **Then** se abre el detalle del título (ver historia de detalle).
-3. **Given** el título destacado, **When** pulso "Reproducir", **Then** se abre el reproductor simulado.
-4. **Given** una imagen de fondo clara, **When** leo el texto, **Then** sigue siendo legible gracias a un degradado.
-5. **Given** un usuario con la preferencia de movimiento reducido, **When** carga la página, **Then** el vídeo de fondo no se reproduce y se muestra una imagen fija.
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US4-A1 | una fila | paso el ratón sobre una tarjeta y espero | se amplía con acciones, duración o temporadas, edad y géneros |
+| US4-A2 | la tarjeta ampliada | se amplía | el resto de tarjetas no cambian de posición |
+| US4-A3 | la tarjeta ampliada | pulso Escape o saco ratón o foco | se cierra |
+| US4-A4 | un dispositivo táctil | toco una tarjeta | se abre directamente el detalle |
 
----
+### US5 · Detalle de título — P2
 
-### User Story 3 - Filas de títulos (carruseles) (Priority: P1)
+**Como** espectador **quiero** ver sinopsis, reparto, géneros, año y duración y, en series, selector de temporada con episodios.
+**Por qué P2**: completa el descubrimiento, pero la página es útil sin él.
+**Prueba independiente**: abrir el detalle de una película y de una serie desde cualquier entrada.
 
-Como espectador quiero filas por categoría ("Tendencias", "Porque has visto…", "Top 10 en España", "Series de TV", "Películas de acción") con desplazamiento horizontal paginado, para explorar contenido organizado por intereses.
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US5-A1 | un título | abro su detalle | veo sinopsis, reparto, géneros, año, duración y títulos similares |
+| US5-A2 | el detalle de una serie | elijo una temporada | se listan sus episodios |
+| US5-A3 | el detalle abierto | pulso Escape, cierre o fuera del panel | se cierra y el foco vuelve al origen |
+| US5-A4 | el detalle abierto | navego con Tab | el foco permanece dentro |
 
-**Why this priority**: es el corazón de la página de exploración; sin filas no hay descubrimiento de contenido.
+### US6 · Mi lista — P2
 
-**Independent Test**: se prueba navegando una fila con ratón, teclado y táctil, y comprobando extremos y número de tarjetas visibles.
+**Como** espectador **quiero** añadir y quitar títulos de "Mi lista" y verlos juntos.
+**Por qué P2**: personalización barata, no imprescindible.
+**Prueba independiente**: añadir, quitar, recargar y abrir "Mi lista".
 
-**Acceptance Scenarios**:
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US6-A1 | un título | pulso añadir | se guarda y el botón pasa de "+" a "✓" |
+| US6-A2 | un título guardado | pulso el botón | se quita y vuelve a "+" |
+| US6-A3 | títulos guardados | recargo | siguen en "Mi lista" |
+| US6-A4 | el botón | un lector de pantalla lo anuncia | su nombre refleja la acción disponible |
 
-1. **Given** una fila de títulos, **When** paso el ratón por encima, **Then** aparecen las flechas anterior y siguiente.
-2. **Given** una fila, **When** pulso la flecha siguiente o uso el teclado o deslizo con el dedo, **Then** la fila avanza una página.
-3. **Given** el inicio o el final de la fila, **When** llego a un extremo, **Then** la flecha correspondiente se oculta o se deshabilita.
-4. **Given** distintos anchos de pantalla, **When** cambio el tamaño de la ventana, **Then** el número de tarjetas visibles se adapta (6, 5, 4, 3 o 2).
-5. **Given** la fila "Top 10 en España", **When** la veo, **Then** cada póster muestra un número grande junto a él.
+### US7 · Búsqueda — P2
 
----
+**Como** espectador **quiero** buscar por título, género o actor y ver resultados en cuadrícula.
+**Por qué P2**: vía alternativa a las filas.
+**Prueba independiente**: escribir con y sin resultados y vaciar el campo.
 
-### User Story 4 - Tarjeta con previsualización (Priority: P1)
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US7-A1 | la cabecera | pulso la lupa | el campo se expande |
+| US7-A2 | el campo abierto | escribo | los resultados se actualizan en cuadrícula tras una breve pausa |
+| US7-A3 | una búsqueda sin coincidencias | termina de actualizarse | veo un mensaje de que no hay resultados |
+| US7-A4 | resultados mostrados | vacío el campo | vuelvo al inicio |
 
-Como espectador quiero que al pasar el ratón (o enfocar con teclado) sobre una tarjeta esta se amplíe y muestre acciones (reproducir, añadir a mi lista, me gusta, más información), duración o temporadas, edad y géneros, para decidir sin abrir el detalle.
+### US8 · Selección de perfil — P3
 
-**Why this priority**: aporta la sensación de producto real y conecta las filas con las acciones principales.
+**Como** espectador **quiero** una pantalla "¿Quién está viendo ahora?" con 4 perfiles, uno Infantil.
+**Por qué P3**: realismo, no afecta a la exploración.
+**Prueba independiente**: elegir cada perfil y comprobar catálogo y recuerdo de la elección.
 
-**Independent Test**: se prueba pasando el ratón y navegando con teclado sobre una tarjeta y comprobando que la fila no se desplaza.
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US8-A1 | la pantalla inicial | la veo | aparecen 4 perfiles, uno Infantil |
+| US8-A2 | la pantalla de perfiles | elijo uno | accedo a la exploración |
+| US8-A3 | el perfil Infantil | exploro | solo veo `TP` o `7+` |
+| US8-A4 | un perfil ya elegido | vuelvo a abrir la página | se recuerda la elección |
 
-**Acceptance Scenarios**:
+### US9 · Reproductor simulado — P3
 
-1. **Given** una fila, **When** paso el ratón sobre una tarjeta y espero un instante, **Then** la tarjeta se amplía mostrando acciones, duración o temporadas, edad y géneros.
-2. **Given** la tarjeta ampliada, **When** se amplía, **Then** el resto de tarjetas de la fila no cambian de posición.
-3. **Given** la tarjeta ampliada, **When** pulso Escape o saco el ratón o el foco, **Then** se cierra la previsualización.
-4. **Given** un dispositivo táctil, **When** toco una tarjeta, **Then** se abre directamente el detalle del título.
+**Como** espectador **quiero** una vista de reproducción con vídeo de muestra, controles básicos y botón de volver.
+**Por qué P3**: cierra el recorrido de "Reproducir".
+**Prueba independiente**: pulsar "Reproducir" y usar cada control con ratón y teclado.
 
----
-
-### User Story 5 - Detalle de título (Priority: P2)
-
-Como espectador quiero ver sinopsis completa, reparto, géneros, año y duración y, en series, un selector de temporada con lista de episodios, para conocer un título a fondo.
-
-**Why this priority**: completa el flujo de descubrimiento, pero la página es útil sin él.
-
-**Independent Test**: se prueba abriendo el detalle de una película y de una serie desde cualquier punto de entrada.
-
-**Acceptance Scenarios**:
-
-1. **Given** un título, **When** abro su detalle, **Then** veo sinopsis, reparto, géneros, año y duración, además de una sección de títulos similares.
-2. **Given** el detalle de una serie, **When** elijo una temporada, **Then** se listan sus episodios.
-3. **Given** el detalle abierto, **When** pulso Escape, el botón de cierre o fuera del panel, **Then** se cierra y el foco vuelve al elemento que lo abrió.
-4. **Given** el detalle abierto, **When** navego con Tab, **Then** el foco permanece dentro del detalle.
-
----
-
-### User Story 6 - Mi lista (Priority: P2)
-
-Como espectador quiero añadir y quitar títulos de "Mi lista" y verlos juntos, para guardar lo que quiero ver más tarde.
-
-**Why this priority**: añade personalización con poco coste, pero no es imprescindible para explorar.
-
-**Independent Test**: se prueba añadiendo y quitando un título, recargando y abriendo "Mi lista".
-
-**Acceptance Scenarios**:
-
-1. **Given** un título, **When** pulso el botón de añadir, **Then** el título se guarda y el botón pasa de "+" a "✓".
-2. **Given** un título ya guardado, **When** pulso el botón, **Then** se quita de la lista y el botón vuelve a "+".
-3. **Given** títulos guardados, **When** recargo la página, **Then** siguen en "Mi lista".
-4. **Given** el botón de añadir o quitar, **When** un lector de pantalla lo anuncia, **Then** su nombre refleja la acción disponible.
-
----
-
-### User Story 7 - Búsqueda (Priority: P2)
-
-Como espectador quiero buscar por título, género o actor y ver los resultados en una cuadrícula, para llegar rápido a lo que busco.
-
-**Why this priority**: es una vía de acceso alternativa a las filas, útil pero secundaria.
-
-**Independent Test**: se prueba escribiendo en el buscador con y sin resultados y vaciándolo.
-
-**Acceptance Scenarios**:
-
-1. **Given** la cabecera, **When** pulso la lupa, **Then** el campo de búsqueda se expande.
-2. **Given** el campo abierto, **When** escribo, **Then** los resultados se actualizan en una cuadrícula tras una breve pausa.
-3. **Given** una búsqueda sin coincidencias, **When** termina de actualizarse, **Then** veo un mensaje de que no hay resultados.
-4. **Given** resultados mostrados, **When** vacío el campo, **Then** vuelvo a la página de inicio.
-
----
-
-### User Story 8 - Selección de perfil (Priority: P3)
-
-Como espectador quiero una pantalla inicial "¿Quién está viendo ahora?" con 4 perfiles, incluido un perfil Infantil, para entrar con el perfil que corresponda.
-
-**Why this priority**: refuerza el realismo de la demo, pero no afecta a la exploración.
-
-**Independent Test**: se prueba eligiendo cada perfil y comprobando el catálogo mostrado y que se recuerda la elección.
-
-**Acceptance Scenarios**:
-
-1. **Given** la pantalla inicial, **When** la veo, **Then** aparecen 4 perfiles, uno de ellos Infantil.
-2. **Given** la pantalla de perfiles, **When** elijo uno, **Then** accedo a la página de exploración.
-3. **Given** el perfil Infantil, **When** exploro el catálogo, **Then** solo veo títulos con clasificación `TP` o `7+`.
-4. **Given** que ya elegí un perfil, **When** vuelvo a abrir la página, **Then** se recuerda mi elección.
-
----
-
-### User Story 9 - Reproductor simulado (Priority: P3)
-
-Como espectador quiero una vista de reproducción con vídeo de muestra, controles básicos (reproducir/pausar, volumen, pantalla completa, barra de progreso) y un botón para volver, para completar el flujo de "Reproducir".
-
-**Why this priority**: cierra el recorrido del botón "Reproducir", pero no es esencial para la exploración.
-
-**Independent Test**: se prueba pulsando "Reproducir" desde cualquier título y usando cada control con ratón y teclado.
-
-**Acceptance Scenarios**:
-
-1. **Given** un título, **When** pulso "Reproducir", **Then** se abre la vista de reproducción con el vídeo de muestra, el mismo para todos los títulos.
-2. **Given** la reproducción, **When** uso los controles, **Then** puedo pausar, cambiar el volumen, pasar a pantalla completa y moverme por la barra de progreso.
-3. **Given** la reproducción, **When** uso teclado (espacio, flechas, F, M, Escape), **Then** cada tecla ejecuta su acción asociada.
-4. **Given** la reproducción, **When** pulso el botón de volver, **Then** regreso a la página de exploración.
-
----
+| ID | Dado | Cuando | Entonces |
+|---|---|---|---|
+| US9-A1 | un título | pulso "Reproducir" | se abre la vista con el vídeo de muestra, el mismo para todos |
+| US9-A2 | la reproducción | uso los controles | puedo pausar, cambiar volumen, pantalla completa y mover la barra de progreso |
+| US9-A3 | la reproducción | uso espacio, flechas, F, M, Escape | cada tecla ejecuta su acción |
+| US9-A4 | la reproducción | pulso volver | regreso a la exploración |
 
 ### Edge Cases
 
-- Una fila con menos títulos que tarjetas visibles: no muestra flechas ni deja huecos.
-- Una búsqueda con texto muy largo, solo espacios o caracteres especiales: no falla y se trata como sin resultados o como vacía.
-- Un título sin imagen de carátula o de banner: se muestra una imagen sustituta sin romper el diseño.
-- "Mi lista" vacía: se muestra un mensaje que explica cómo añadir títulos.
-- Cambio de tamaño de ventana mientras hay una previsualización o una fila desplazada: el estado se mantiene coherente.
-- Datos guardados corruptos o ausentes (perfil, Mi lista): la aplicación arranca con valores por defecto.
-- Usuario con movimiento reducido: ninguna animación esencial impide usar la página.
-- Un episodio o una temporada sin contenido: se indica sin errores.
+| ID | Caso | Comportamiento esperado |
+|---|---|---|
+| EC-1 | Fila con menos títulos que tarjetas visibles | sin flechas ni huecos |
+| EC-2 | Búsqueda muy larga, solo espacios o caracteres especiales | no falla; sin resultados o como vacía |
+| EC-3 | Título sin carátula o banner | imagen sustituta, diseño intacto |
+| EC-4 | "Mi lista" vacía | mensaje que explica cómo añadir |
+| EC-5 | Redimensionar con previsualización o fila desplazada | estado coherente |
+| EC-6 | Datos guardados corruptos o ausentes | arranca con valores por defecto |
+| EC-7 | Movimiento reducido | ninguna animación esencial bloquea el uso |
+| EC-8 | Temporada o episodio sin contenido | se indica sin errores |
 
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
 
-- **FR-001**: La página MUST mostrar una cabecera fija con logotipo, enlaces de navegación, buscador, notificaciones y menú de perfil.
-- **FR-002**: La cabecera MUST ser transparente en la parte superior y pasar a fondo sólido al desplazarse.
-- **FR-003**: En pantallas estrechas, los enlaces de navegación MUST agruparse en un menú desplegable.
-- **FR-004**: El menú de perfil MUST listar los perfiles y ofrecer "Cerrar sesión" simulado.
-- **FR-005**: La página MUST mostrar un título destacado a ancho completo con sinopsis, etiqueta de edad y botones "Reproducir" y "Más información".
-- **FR-006**: El texto del título destacado MUST ser legible sobre la imagen de fondo.
-- **FR-007**: El vídeo de fondo del título destacado MUST detenerse con la preferencia de movimiento reducido.
-- **FR-008**: La página MUST mostrar filas horizontales por categoría, incluida una fila "Top 10 en España" con números grandes.
-- **FR-009**: Cada fila MUST ofrecer navegación anterior y siguiente por ratón, teclado y táctil, ocultando o deshabilitando las flechas en los extremos.
-- **FR-010**: El número de tarjetas visibles por fila MUST adaptarse al ancho de pantalla (6, 5, 4, 3 o 2).
-- **FR-011**: Al pasar el ratón o enfocar una tarjeta, esta MUST ampliarse mostrando acciones, duración o temporadas, edad y géneros, sin desplazar al resto de la fila.
-- **FR-012**: La previsualización MUST cerrarse con Escape o al perder ratón o foco; en dispositivos táctiles un toque MUST abrir el detalle.
-- **FR-013**: El detalle de un título MUST mostrar sinopsis, reparto, géneros, año, duración y títulos similares.
-- **FR-014**: El detalle de una serie MUST permitir elegir temporada y listar sus episodios.
-- **FR-015**: El detalle MUST cerrarse con Escape, botón de cierre o clic fuera, mantener el foco dentro mientras está abierto y devolverlo al elemento de origen.
-- **FR-016**: El usuario MUST poder añadir y quitar títulos de "Mi lista", con indicador visible y nombre accesible acordes al estado.
-- **FR-017**: "Mi lista" MUST conservarse entre recargas y mostrar un mensaje cuando esté vacía.
-- **FR-018**: El usuario MUST poder buscar por título, género o actor y ver los resultados en una cuadrícula que se actualiza al escribir.
-- **FR-019**: La búsqueda sin coincidencias MUST mostrar un mensaje; vaciar el campo MUST volver al inicio.
-- **FR-020**: La aplicación MUST ofrecer una pantalla de selección con 4 perfiles, uno Infantil, y recordar el perfil elegido.
-- **FR-021**: El perfil Infantil MUST mostrar solo títulos con clasificación `TP` o `7+`.
-- **FR-022**: El reproductor simulado MUST ofrecer reproducir/pausar, volumen, pantalla completa, barra de progreso y botón de volver, y MUST usar un único vídeo de muestra para todos los títulos, también como fondo del título destacado.
-- **FR-023**: El reproductor MUST poder controlarse con teclado (espacio, flechas, F, M, Escape).
-- **FR-024**: Todo el contenido MUST proceder de un catálogo local, sin depender de servicios externos al ejecutarse.
-- **FR-025**: La interfaz MUST estar en español de España, ser oscura y funcionar sin ratón.
-- **FR-026**: Los enlaces "Series" y "Películas" MUST filtrar el inicio para mostrar solo las filas de ese tipo; "Novedades populares" MUST mostrar las filas de lo más reciente; "Inicio" MUST restaurar todas las filas.
-- **FR-027**: El icono de notificaciones MUST abrir un panel con 3 avisos de ejemplo estáticos, cerrable con Escape o al pulsar fuera.
+| ID | Historia | Requisito (MUST) |
+|---|---|---|
+| FR-001 | US1 | Cabecera fija con logotipo, enlaces, buscador, notificaciones y menú de perfil. |
+| FR-002 | US1 | Cabecera transparente arriba y sólida al desplazarse. |
+| FR-003 | US1 | En pantallas estrechas, los enlaces se agrupan en un menú desplegable. |
+| FR-004 | US1 | El menú de perfil lista los perfiles y ofrece "Cerrar sesión" simulado. |
+| FR-005 | US2 | Título destacado a ancho completo con sinopsis, edad y botones "Reproducir" y "Más información". |
+| FR-006 | US2 | Texto del destacado legible sobre la imagen de fondo. |
+| FR-007 | US2 | El vídeo de fondo se detiene con movimiento reducido. |
+| FR-008 | US3 | Filas horizontales por categoría, incluida "Top 10 en España" con números grandes. |
+| FR-009 | US3 | Navegación anterior/siguiente por ratón, teclado y táctil; flechas ocultas o deshabilitadas en extremos. |
+| FR-010 | US3 | Tarjetas visibles por fila adaptadas al ancho (6, 5, 4, 3 o 2). |
+| FR-011 | US4 | Al pasar el ratón o enfocar, la tarjeta se amplía con acciones, duración o temporadas, edad y géneros, sin desplazar la fila. |
+| FR-012 | US4 | La previsualización se cierra con Escape o al perder ratón o foco; en táctil un toque abre el detalle. |
+| FR-013 | US5 | El detalle muestra sinopsis, reparto, géneros, año, duración y títulos similares. |
+| FR-014 | US5 | El detalle de una serie permite elegir temporada y lista sus episodios. |
+| FR-015 | US5 | El detalle se cierra con Escape, botón o clic fuera, mantiene el foco dentro y lo devuelve al origen. |
+| FR-016 | US6 | Añadir y quitar títulos de "Mi lista", con indicador visible y nombre accesible acordes al estado. |
+| FR-017 | US6 | "Mi lista" se conserva entre recargas y muestra un mensaje cuando está vacía. |
+| FR-018 | US7 | Buscar por título, género o actor con resultados en cuadrícula que se actualiza al escribir. |
+| FR-019 | US7 | Sin coincidencias → mensaje; vaciar el campo → vuelta al inicio. |
+| FR-020 | US8 | Pantalla de selección con 4 perfiles (uno Infantil) y recuerdo del elegido. |
+| FR-021 | US8 | El perfil Infantil solo muestra títulos `TP` o `7+`. |
+| FR-022 | US9 | Reproductor con reproducir/pausar, volumen, pantalla completa, progreso y volver; un único vídeo de muestra para todos los títulos y para el hero. |
+| FR-023 | US9 | El reproductor se controla con teclado (espacio, flechas, F, M, Escape). |
+| FR-024 | todas | Todo el contenido procede de un catálogo local, sin servicios externos en ejecución. |
+| FR-025 | todas | Interfaz en español de España, oscura y utilizable sin ratón. |
+| FR-026 | US1 | "Series" y "Películas" filtran el inicio; "Novedades populares" muestra lo más reciente; "Inicio" restaura todo. |
+| FR-027 | US1 | El icono de notificaciones abre un panel con 3 avisos estáticos, cerrable con Escape o al pulsar fuera. |
 
-### Key Entities *(include if feature involves data)*
+### Key Entities
 
-- **Título**: película o serie con carátula, banner, sinopsis, géneros, año, clasificación de edad, duración y reparto; las series incluyen temporadas.
-- **Temporada / Episodio**: una temporada agrupa episodios; cada episodio tiene número, nombre, sinopsis y duración.
-- **Fila (categoría)**: conjunto ordenado de títulos con un nombre; puede ser de tipo Top 10.
-- **Perfil**: usuario simulado con nombre, avatar y marca de si es Infantil.
-- **Mi lista**: conjunto de títulos que el usuario ha guardado, asociado a su perfil.
+| Entidad | Descripción |
+|---|---|
+| Título | Película o serie: carátula, banner, sinopsis, géneros, año, edad, duración y reparto; las series incluyen temporadas. |
+| Temporada / Episodio | Una temporada agrupa episodios (número, nombre, sinopsis, duración). |
+| Fila | Conjunto ordenado de títulos con nombre; puede ser Top 10. |
+| Perfil | Usuario simulado: nombre, avatar y marca Infantil. |
+| Mi lista | Títulos guardados, asociados a un perfil. |
 
 ## Success Criteria *(mandatory)*
 
-### Measurable Outcomes
-
-- **SC-001**: Un espectador llega al detalle de cualquier título del inicio en un máximo de 3 acciones.
-- **SC-002**: El 100 % de las funciones principales (navegar filas, abrir detalle, añadir a Mi lista, buscar) se puede completar solo con teclado.
-- **SC-003**: La página es utilizable sin desplazamiento horizontal de la página en anchos de 360, 768, 1280 y 1920 px.
-- **SC-004**: El texto y los controles cumplen un contraste mínimo de 4,5:1.
-- **SC-005**: El contenido principal de la página de inicio es visible y usable en menos de 3 segundos en un equipo de escritorio estándar.
-- **SC-006**: Un título añadido a "Mi lista" sigue presente tras recargar la página en el 100 % de los casos.
-- **SC-007**: Las búsquedas muestran resultados o el mensaje de "sin resultados" en menos de 1 segundo desde que se deja de escribir.
-- **SC-008**: Con la preferencia de movimiento reducido activada, ninguna animación o vídeo se reproduce automáticamente.
+| ID | Criterio medible |
+|---|---|
+| SC-001 | Llegar al detalle de cualquier título del inicio en ≤ 3 acciones. |
+| SC-002 | El 100 % de las funciones principales (filas, detalle, Mi lista, búsqueda) se completa solo con teclado. |
+| SC-003 | Sin scroll horizontal de página a 360, 768, 1280 y 1920 px. |
+| SC-004 | Contraste mínimo de 4,5:1 en texto y controles. |
+| SC-005 | Contenido principal del inicio usable en < 3 s en un equipo de escritorio estándar. |
+| SC-006 | Un título añadido a "Mi lista" sigue presente tras recargar en el 100 % de los casos. |
+| SC-007 | Resultados o mensaje de "sin resultados" en < 1 s desde que se deja de escribir. |
+| SC-008 | Con movimiento reducido, ninguna animación o vídeo se reproduce automáticamente. |
 
 ## Assumptions
 
-- Es una demo educativa local; no se publica ni requiere cuentas reales.
-- El usuario ya está "logueado": no hay registro ni inicio de sesión real.
-- El catálogo es de unos 60 títulos (ficticios o reales) con carátula, banner, sinopsis, géneros, año, edad, duración y reparto; las series tienen temporadas y episodios.
+- Demo educativa local; sin cuentas reales ni publicación. El usuario ya está "logueado".
+- Catálogo de unos 60 títulos ficticios con carátula, banner, sinopsis, géneros, año, edad, duración y reparto; series con temporadas y episodios.
 - El autor dispone de permiso y derechos para usar marca y activos con copyright en local.
-- Los perfiles, la lista y la elección de perfil se conservan en el propio dispositivo, sin servidor.
-- Fuera de alcance: pagos, registro real, catálogo remoto, recomendaciones personalizadas reales, descargas, subtítulos y audio múltiple, DRM.
-- La interfaz es solo en español de España.
-- Los avisos de notificaciones y el vídeo de muestra son contenido estático local; "Cerrar sesión" devuelve a la pantalla de selección de perfil.
+- Perfiles, lista y elección de perfil se conservan en el dispositivo, sin servidor.
+- **Fuera de alcance**: pagos, registro real, catálogo remoto, recomendaciones reales, descargas, subtítulos, audio múltiple, DRM.
+- Avisos y vídeo de muestra son estáticos y locales; "Cerrar sesión" vuelve a la selección de perfil.

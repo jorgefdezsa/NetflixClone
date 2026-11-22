@@ -43,6 +43,7 @@ Réplica de la página de exploración de Netflix como aplicación web estática
 | V. Quality and Testability | Pasa: Vitest + Testing Library y `data-testid`. | Pasa: `contracts/testids.md` define los identificadores; lógica en funciones puras. |
 | VI. Incremental Delivery | Pasa: cada historia deja `typecheck`, `test` y `build` en verde. | Pasa: `quickstart.md` fija la puerta de cada historia. |
 | VII. Simplicity | Pasa: sin gestor de estado externo. | Pasa: dos contextos pequeños (D6); sin dependencias no justificadas. |
+| VIII. Small-Model Friendly | Pasa: tareas en fichas por fase < 7 KB. | Pasa: `IMPLEMENT.md` + `phases/P01…P14` (D16). |
 
 Resultado: **sin violaciones**. No se rellena Complexity Tracking.
 
@@ -56,6 +57,8 @@ specs/001-netflix-browse/
 ├── research.md          # Phase 0 output (/speckit-plan command)
 ├── data-model.md        # Phase 1 output (/speckit-plan command)
 ├── quickstart.md        # Phase 1 output (/speckit-plan command)
+├── IMPLEMENT.md         # Guía única para el modelo implementador
+├── phases/              # Fichas por fase P01…P14 (detalle de cada tarea)
 ├── contracts/           # Phase 1 output (/speckit-plan command)
 │   ├── types.ts         # Tipos del dominio
 │   ├── hooks.md         # Funciones puras, hooks y componentes
@@ -63,7 +66,7 @@ specs/001-netflix-browse/
 │   └── testids.md       # Contrato de data-testid
 ├── checklists/
 │   └── requirements.md
-└── tasks.md             # Phase 2 output (/speckit-tasks command - NOT created by /speckit-plan)
+└── tasks.md             # Índice con casillas T001–T129 (detalle en phases/)
 ```
 
 ### Source Code (repository root)
@@ -82,6 +85,9 @@ src/
 ├── main.tsx
 ├── app/
 │   ├── App.tsx              # router y proveedores
+│   ├── RootLayout.tsx
+│   ├── RequireProfile.tsx
+│   ├── HomeRedirect.tsx
 │   └── routes.tsx
 ├── types/
 │   └── index.ts             # copia de contracts/types.ts
@@ -97,6 +103,7 @@ src/
 │   ├── rowsForView.ts
 │   ├── pageSize.ts
 │   ├── formatDuration.ts
+│   ├── similarTitles.ts
 │   └── storage.ts
 ├── hooks/
 │   ├── useProfile.tsx
@@ -105,15 +112,20 @@ src/
 │   ├── useDebouncedValue.ts
 │   ├── useFocusTrap.ts
 │   ├── useReducedMotion.ts
-│   └── useHoverPreview.ts
+│   ├── useHoverPreview.ts
+│   ├── useScrolled.ts
+│   ├── useTitleModal.tsx
+│   └── usePlayerShortcuts.ts
 ├── components/
 │   ├── Header/
 │   ├── NotificationsPanel/
+│   ├── ProfileMenu/
+│   ├── SafeImage/
 │   ├── Hero/
 │   ├── Row/
 │   ├── TitleCard/
 │   ├── Modal/
-│   ├── TitleModal/
+│   ├── TitleModal/          # incluye TitleModalHost.tsx
 │   ├── Player/
 │   ├── SearchBox/
 │   ├── TitleGrid/
@@ -129,10 +141,27 @@ src/
 │   ├── tokens.css           # variables de color, espaciado, tipografía y z-index
 │   └── global.css
 └── test/
-    └── setup.ts             # jest-dom y matchMedia simulado
+    ├── setup.ts             # jest-dom y matchMedia simulado
+    └── renderWithProviders.tsx
 
-tests/                       # pruebas de lógica pura y de comportamiento por historia
+scripts/
+└── generate-placeholders.mjs  # SVG de pósters, banners y avatares
 ```
+
+## Plan de implementación por fases
+
+| Fase | Contenido | Tareas | Ficha |
+|---|---|---|---|
+| P01 | Setup Vite + Vitest | T001–T010 | `phases/P01-setup.md` |
+| P02 | Estilos y lógica pura | T011–T020 | `phases/P02-styles-lib.md` |
+| P03 | Datos y activos | T021–T034 | `phases/P03-data.md` |
+| P04 | Estado y esqueleto | T035–T049 | `phases/P04-state-app.md` |
+| P05–P08 | US1–US4 (MVP, P1) | T050–T080 | `phases/P05…P08` |
+| P09–P11 | US5–US7 (P2) | T081–T104 | `phases/P09…P11` |
+| P12–P13 | US8–US9 (P3) | T105–T119 | `phases/P12…P13` |
+| P14 | Pulido y comprobaciones | T120–T129 | `phases/P14-polish.md` |
+
+**Restricciones del modelo implementador** (Qwen3-Coder-30B local, ventana útil ≈ 15k tokens tras la sobrecarga del arnés): cada ficha < 7 KB; una sesión por fase; `IMPLEMENT.md` contiene las reglas comunes; las fichas incluyen firmas, `data-testid` y criterios verificables para que no haga falta leer `spec.md` ni `research.md`.
 
 **Structure Decision**: aplicación única de front-end en la raíz del repositorio. Cada componente vive en su carpeta con su `*.module.css` y su `*.test.tsx` junto al código. La lógica sin interfaz va a `src/lib/` para probarla sin renderizar. Los datos se separan de la interfaz en `src/data/` (principio V).
 

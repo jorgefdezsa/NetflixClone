@@ -11,6 +11,7 @@ Firmas normativas. Cada elemento se implementa en el fichero indicado.
 | `rowsForView.ts` | `rowsForView(rows: Row[], view: View): Row[]` | Devuelve las filas cuyo `views` incluye `view`, en su orden original. |
 | `pageSize.ts` | `itemsPerPage(width: number): 2 \| 3 \| 4 \| 5 \| 6` | ≥1400 → 6, ≥1100 → 5, ≥800 → 4, ≥500 → 3, resto → 2. |
 | `formatDuration.ts` | `formatDuration(minutes: number): string` | `95` → `"1 h 35 min"`; `45` → `"45 min"`. |
+| `similarTitles.ts` | `similarTitles(title: Title, all: Title[], limit = 6): Title[]` | Excluye el propio título; ≥ 1 género en común; orden por géneros compartidos desc y `name`. |
 | `storage.ts` | `readJson<T>(key: string, fallback: T, guard: (v: unknown) => v is T): T` y `writeJson(key: string, value: unknown): void` | Prefijo `nbc:` aplicado por quien llama. Lectura con `try/catch`; datos inválidos → `fallback`. |
 
 ## Hooks (`src/hooks/`)
@@ -23,6 +24,9 @@ Firmas normativas. Cada elemento se implementa en el fichero indicado.
 | `useDebouncedValue` | `<T>(value: T, delayMs: number) => T` | Valor retardado. |
 | `useFocusTrap` | `(active: boolean) => RefObject<HTMLElement>` | Atrapa Tab dentro del elemento mientras `active`. |
 | `useReducedMotion` | `() => boolean` | Refleja `prefers-reduced-motion: reduce`. |
+| `useScrolled` | `(threshold = 10) => boolean` | `window.scrollY > threshold`. |
+| `useTitleModal` | `() => { current: Title \| null; open(t: Title): void; close(): void }` | Estado del detalle (proveedor `TitleModalProvider`). |
+| `usePlayerShortcuts` | `(actions: { togglePlay; seek(s: number); toggleFullscreen; toggleMute; exit }) => void` | Atajos del reproductor. |
 | `useHoverPreview` | `(delayMs?: number) => { open: boolean; handlers: {...}; close(): void }` | Control de la previsualización (por defecto 400 ms). |
 
 ## Componentes (`src/components/`)
@@ -42,6 +46,7 @@ Firmas normativas. Cada elemento se implementa en el fichero indicado.
 | `ProfileGate` | ninguna | Pantalla "¿Quién está viendo ahora?". |
 | `SearchBox` | ninguna | Lupa que expande el campo; sincroniza con la URL `/search?q=` (retardo de 250 ms). |
 | `TitleGrid` | `{ titles: Title[] }` | Cuadrícula de resultados o de Mi lista. |
+| `SafeImage` | `{ src; alt; width: number; height: number } & img props` | `<img>` con `loading="lazy"` e imagen sustituta guardada. Único modo permitido de pintar imágenes. |
 | `AddToListButton` | `{ titleId: string; testId?: string }` | Alterna `+` / `✓` con `aria-label` acorde. `testId` por defecto `add-to-list`. |
 
 ## Páginas (`src/pages/`)

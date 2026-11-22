@@ -2,6 +2,8 @@
 
 **Feature**: `001-netflix-browse`
 
+> **Implementación con modelo local**: lee `IMPLEMENT.md` y trabaja fase a fase con `phases/PNN-*.md`. Este quickstart resume lo que esas fichas ejecutan.
+
 ## Requisitos
 
 - Node.js ≥ 20 y npm.

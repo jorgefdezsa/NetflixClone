@@ -89,3 +89,9 @@ No quedan `NEEDS CLARIFICATION` abiertos: la spec los resolvió en la sesión de
 
 - **Decision**: `loading="lazy"` y atributos `width`/`height` en todas las imágenes, el vídeo con `preload="metadata"`, y `React.lazy` solo para la página del reproductor.
 - **Rationale**: SC-005 (contenido usable en < 3 s) con una carga inicial pequeña.
+
+## D16. Artefactos para un modelo implementador pequeño
+
+- **Decision**: las tareas se reparten en fichas por fase (`phases/PNN-*.md`, < 7 KB) con campos fijos (Crea, Contrato, Hecho cuando), reglas comunes en `IMPLEMENT.md` e índice con casillas en `tasks.md`. Un componente compartido `SafeImage` centraliza `loading="lazy"`, dimensiones y la imagen sustituta.
+- **Rationale**: con ~25k tokens de sobrecarga del arnés y un límite de prompt de 40k, un `tasks.md` monolítico de ~16k tokens deja sin margen al modelo local. Fichas pequeñas y autocontenidas reducen alucinaciones y permiten verificar cada tarea.
+- **Alternatives considered**: un único `tasks.md` detallado (demasiado grande); una tarea por fichero (cientos de ficheros, más coste de apertura).

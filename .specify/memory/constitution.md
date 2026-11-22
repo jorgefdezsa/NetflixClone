@@ -1,8 +1,9 @@
 <!--
 Sync Impact Report
-Version change: 0.1.0 (template defaults) → 1.0.0
-Added principles: I–VII (Demo Scope, Fixed Stack, Accessibility, Responsive Mobile-First,
-  Quality and Testability, Incremental Delivery, Simplicity)
+Version change: 1.0.0 → 1.1.0
+Added principles: VIII (Small-Model Friendly Artifacts)
+Earlier: 0.1.0 (template defaults) → 1.0.0 added I–VII (Demo Scope, Fixed Stack, Accessibility,
+  Responsive Mobile-First, Quality and Testability, Incremental Delivery, Simplicity)
 Removed sections: none
 Deferred items: none
 -->
@@ -43,6 +44,13 @@ Each user story MUST leave the app passing `npm run typecheck`, `npm test` and
 The simplest solution that meets the requirement SHOULD be preferred. Any new dependency
 MUST be justified in `plan.md`.
 
+### VIII. Small-Model Friendly Artifacts
+Implementation MUST be doable by a small local model. Planning documents MUST be modular and
+self-contained: tasks live in per-phase files under `phases/`, each file MUST stay under 7 KB,
+and each task card MUST name one primary file, its exports, its `data-testid` values and a
+verifiable "Hecho cuando". Shared rules live only in `IMPLEMENT.md`. An implementer MUST NOT
+need to read more than `IMPLEMENT.md` and one phase file per run.
+
 ## Governance
 
 This constitution supersedes other practices. Deviations MUST be documented in `plan.md`
@@ -50,4 +58,4 @@ This constitution supersedes other practices. Deviations MUST be documented in `
 redefining a principle, MINOR for adding or materially expanding one, PATCH for
 clarifications.
 
-**Version**: 1.0.0 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-21
+**Version**: 1.1.0 | **Ratified**: 2026-11-21 | **Last Amended**: 2026-11-21
