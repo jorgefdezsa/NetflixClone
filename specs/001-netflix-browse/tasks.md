@@ -178,15 +178,15 @@ Ficha: `phases/P10-us6-mylist.md`
 
 Ficha: `phases/P11-us7-search.md`
 
-- [ ] T096 [P] [US7] `useDebouncedValue`
-- [ ] T097 [P] [US7] `SearchBox.module.css`
-- [ ] T098 [US7] `SearchBox.tsx`
-- [ ] T099 [US7] `Header.tsx` con buscador
-- [ ] T100 [US7] `SearchPage`
-- [ ] T101 [US7] Ruta `/search`
-- [ ] T102 [US7] `SearchBox.test.tsx`
-- [ ] T103 [US7] `SearchPage.test.tsx`
-- [ ] T104 [US7] GATE US7
+- [X] T096 [P] [US7] `useDebouncedValue`
+- [X] T097 [P] [US7] `SearchBox.module.css`
+- [X] T098 [US7] `SearchBox.tsx`
+- [X] T099 [US7] `Header.tsx` con buscador
+- [X] T100 [US7] `SearchPage`
+- [X] T101 [US7] Ruta `/search`
+- [X] T102 [US7] `SearchBox.test.tsx`
+- [X] T103 [US7] `SearchPage.test.tsx`
+- [X] T104 [US7] GATE US7
 
 ## P12 · US8 Selección de perfil (P3)
 

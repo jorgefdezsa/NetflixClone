@@ -22,3 +22,9 @@
 ## P09
 - **T087**: `TitleModalHost` pasa `key={current.id}` a `TitleModal`. Así, al abrir un título similar desde el propio modal, el selector de temporada vuelve a la temporada 1 y el foco se restaura al elemento original. No altera el contrato.
 - **T081**: además de lo pedido, `Shift+Tab` con el foco en el propio diálogo (que se enfoca al abrir, `tabIndex=-1`) también salta al último enfocable; sin esto el foco escapaba del modal.
+
+## P11
+- **T098 — foco al cambiar de página**: cada página pinta su propia `<Header />`, así que al escribir en `/browse` y navegar a `/search` el `SearchBox` se desmonta y se monta de nuevo, y el campo perdía el foco a mitad de escritura. Si hay `q` en la URL al montar, `SearchBox` enfoca el campo. Además, el `<input>` cerrado lleva `tabIndex={-1}` para que no reciba foco con Tab estando invisible (ancho 0).
+- **T098**: no se vuelve a navegar si `debounced` ya coincide con la `q` de la URL en `/search` (evita una navegación redundante al montar).
+- **T102 — pruebas con temporizadores**: `userEvent` con `vi.useFakeTimers()` se cuelga en Vitest (la espera interna de Testing Library solo detecta temporizadores falsos de Jest). `SearchBox.test.tsx` usa `fireEvent` + `act(() => vi.advanceTimersByTime(...))` en lugar de `userEvent.setup({ advanceTimers })`. Cubre los mismos casos.
+- **Lint**: `npm run lint` da 0 errores y 3 avisos `react-refresh/only-export-components` (proveedor y hook en el mismo fichero, como pide P04). No bloquean.

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useScrolled } from '../../hooks/useScrolled';
 import NotificationsPanel from '../NotificationsPanel/NotificationsPanel';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
+import SearchBox from '../SearchBox/SearchBox';
 import styles from './Header.module.css';
 
 const LINKS = [
@@ -53,9 +54,7 @@ export default function Header() {
           ☰
         </button>
         <div className={styles.right}>
-          <button type="button" className={styles.iconButton} data-testid="search-toggle" aria-label="Buscar">
-            🔍
-          </button>
+          <SearchBox />
           <button
             ref={notifRef}
             type="button"
