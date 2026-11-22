@@ -117,13 +117,13 @@ Ficha: `phases/P05-us1-header.md`
 
 Ficha: `phases/P06-us2-hero.md`
 
-- [ ] T060 [P] [US2] `useReducedMotion`
-- [ ] T061 [P] [US2] `Hero.module.css`
-- [ ] T062 [US2] `Hero.tsx`
-- [ ] T063 [US2] `BrowsePage` con hero
-- [ ] T064 [US2] `Hero.test.tsx`
+- [X] T060 [P] [US2] `useReducedMotion`
+- [X] T061 [P] [US2] `Hero.module.css`
+- [X] T062 [US2] `Hero.tsx`
+- [X] T063 [US2] `BrowsePage` con hero
+- [X] T064 [US2] `Hero.test.tsx`
 - [ ] T065 [MANUAL] [US2] Vídeo de muestra
-- [ ] T066 [US2] GATE US2
+- [X] T066 [US2] GATE US2
 
 ## P07 · US3 Filas de títulos (P1)
 

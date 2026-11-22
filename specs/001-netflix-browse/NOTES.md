@@ -11,3 +11,6 @@
 ## P04
 - **T035 / T048 — formato de `nbc:profile`**: T035 pide leer con `readJson` (JSON), pero T048 escribe el id en crudo (`localStorage.setItem('nbc:profile', 'p-1')`), que no es JSON válido. `useProfile` escribe con `writeJson` y al leer acepta ambos formatos: primero JSON y, si falla, el valor en crudo. Cubierto por la prueba "acepta el id guardado sin comillas JSON".
 - **T037**: el cambio de perfil se detecta durante el render (estado `{ key, ids }`), sin `useEffect`, para no pintar un fotograma con la lista del perfil anterior.
+
+## P06
+- **T065 (MANUAL)**: pendiente. No existe `public/assets/video/sample.mp4`; sin él el `<video>` falla, se oculta por `onError` y el hero muestra el banner. Para activarlo, copiar un vídeo corto (≤ 15 s) con ese nombre.
