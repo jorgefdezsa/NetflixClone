@@ -129,14 +129,14 @@ Ficha: `phases/P06-us2-hero.md`
 
 Ficha: `phases/P07-us3-rows.md`
 
-- [ ] T067 [US3] `useCarousel`
-- [ ] T068 [P] [US3] `TitleCard.module.css`
-- [ ] T069 [US3] `TitleCard.tsx` (primera versión)
-- [ ] T070 [P] [US3] `Row.module.css`
-- [ ] T071 [US3] `Row.tsx`
-- [ ] T072 [US3] `BrowsePage` con filas
-- [ ] T073 [US3] `Row.test.tsx`
-- [ ] T074 [US3] GATE US3
+- [X] T067 [US3] `useCarousel`
+- [X] T068 [P] [US3] `TitleCard.module.css`
+- [X] T069 [US3] `TitleCard.tsx` (primera versión)
+- [X] T070 [P] [US3] `Row.module.css`
+- [X] T071 [US3] `Row.tsx`
+- [X] T072 [US3] `BrowsePage` con filas
+- [X] T073 [US3] `Row.test.tsx`
+- [X] T074 [US3] GATE US3
 
 ## P08 · US4 Tarjeta con previsualización (P1)
 
