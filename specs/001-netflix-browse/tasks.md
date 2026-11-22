@@ -102,16 +102,16 @@ Ficha: `phases/P04-state-app.md`
 
 Ficha: `phases/P05-us1-header.md`
 
-- [ ] T050 [P] [US1] `useScrolled`
-- [ ] T051 [P] [US1] `Header.module.css`
-- [ ] T052 [US1] `Header.tsx` (primera versión)
-- [ ] T053 [P] [US1] `NotificationsPanel`
-- [ ] T054 [P] [US1] `ProfileMenu`
-- [ ] T055 [US1] `Header.tsx` (añadir panel y menú)
-- [ ] T056 [P] [US1] `BrowsePage` (esqueleto)
-- [ ] T057 [US1] Rutas de navegación
-- [ ] T058 [US1] `Header.test.tsx`
-- [ ] T059 [US1] GATE US1
+- [X] T050 [P] [US1] `useScrolled`
+- [X] T051 [P] [US1] `Header.module.css`
+- [X] T052 [US1] `Header.tsx` (primera versión)
+- [X] T053 [P] [US1] `NotificationsPanel`
+- [X] T054 [P] [US1] `ProfileMenu`
+- [X] T055 [US1] `Header.tsx` (añadir panel y menú)
+- [X] T056 [P] [US1] `BrowsePage` (esqueleto)
+- [X] T057 [US1] Rutas de navegación
+- [X] T058 [US1] `Header.test.tsx`
+- [X] T059 [US1] GATE US1
 
 ## P06 · US2 Título destacado (P1)
 

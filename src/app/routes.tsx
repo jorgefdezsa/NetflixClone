@@ -1,9 +1,17 @@
-import type { RouteObject } from 'react-router-dom';
+import { Navigate, type RouteObject } from 'react-router-dom';
+import BrowsePage from '../pages/BrowsePage';
 import RootLayout from './RootLayout';
 
 export const routes: RouteObject[] = [
   {
     element: <RootLayout />,
-    children: [{ path: '/', element: <p>Netflix Browse Clone</p> }],
+    children: [
+      { path: '/', element: <Navigate to="/browse" replace /> },
+      { path: '/browse', element: <BrowsePage view="home" /> },
+      { path: '/browse/series', element: <BrowsePage view="series" /> },
+      { path: '/browse/movies', element: <BrowsePage view="movies" /> },
+      { path: '/browse/new', element: <BrowsePage view="new" /> },
+      { path: '*', element: <Navigate to="/browse" replace /> },
+    ],
   },
 ];
